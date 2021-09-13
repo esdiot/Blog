@@ -1,0 +1,803 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      NeverSurrender
+    
+  </title>
+  <meta name="author" content="Biao Wang">
+  <meta name="keywords" content="" />
+  <meta name="description" content="VincentW will not give up" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/Blogs/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/Blogs/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/Blogs/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/Blogs/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			主页
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/Blogs/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/Blogs/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			
+
+
+
+	<!--cart style-->
+	<div class="layout-cart">
+	<div id="layout-cart">
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HardwareExtra/" title=" 其他配件 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HardwareExtra/" title="其他配件">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HardwareExtra/" itemprop="url">
+		其他配件
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							CaseFanHeatskink
+CommunityCase (jeanlego)
+
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToAccessGpio/" title=" 如何访问GPIO " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToAccessGpio/" title="如何访问GPIO">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToAccessGpio/" itemprop="url">
+		如何访问GPIO
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							这篇文档介绍如何在Android和Ubuntu下访问GPIO。
+准备工作固件版本必须满足以下条件：
+
+Android M &gt;= V170603
+An...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToAccessI2c/" title=" 如何使用I2C接口 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToAccessI2c/" title="如何使用I2C接口">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToAccessI2c/" itemprop="url">
+		如何使用I2C接口
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							这篇文档介绍如何在Android和Ubuntu下使用I2C。
+前提条件
+Ubuntu V180531或更新版本
+Android V180619或更新版本
+...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToChangeBootLogo/" title=" 如何更换开机Logo " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToChangeBootLogo/" title="如何更换开机Logo">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToChangeBootLogo/" itemprop="url">
+		如何更换开机Logo
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							
+存放位置
+
+Logo存放在/usr/share目录下
+12$ ls /usr/share/fenix/logo/logo.bmp/usr/share/f...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToConfigureWi-FiToWorkInSTA+APMode/" title=" 配置Wi-Fi同时工作在STA+AP模式 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToConfigureWi-FiToWorkInSTA+APMode/" title="配置Wi-Fi同时工作在STA+AP模式">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToConfigureWi-FiToWorkInSTA+APMode/" itemprop="url">
+		配置Wi-Fi同时工作在STA+AP模式
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							这篇文档介绍如何在Ubuntu下配置Wi-Fi同时工作在STA+AP模式。
+准备工作固件基于V2005版本，并将OTA升级到最新的版本
+开始配置将wlan...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToConnectWifi/" title=" 如何连接Wi-Fi " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToConnectWifi/" title="如何连接Wi-Fi">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToConnectWifi/" itemprop="url">
+		如何连接Wi-Fi
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							对于桌面系统，可以通过图形界面很方便地连接到Wi-Fi热点，所以在这里只说如何通过命令行连接Wi-Fi。对于Ubuntu/Debian服务器版本，没有图形...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToControlLED/" title=" 如何控制LED " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToControlLED/" title="如何控制LED">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToControlLED/" itemprop="url">
+		如何控制LED
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							切换root用户只有root用户有权限控制修改LED灯的节点状态
+123khadas@Khadas:~$ suPassword:root@Khadas:/...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToConvertToUseNPU/" title=" 如何转换并通过NPU调用自己的模型 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToConvertToUseNPU/" title="如何转换并通过NPU调用自己的模型">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToConvertToUseNPU/" itemprop="url">
+		如何转换并通过NPU调用自己的模型
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							这里以yolov3为例,演示如何转换自己的模型,并适配进我们demo,在VIM3上面运行
+注意:
+请在参照文档转换之前,先仔细查看一遍一下文档
+
+SDK使...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToCustomIRCodeToBoot/" title=" 如何自定义`IR CODE`进行系统开机 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToCustomIRCodeToBoot/" title="如何自定义`IR CODE`进行系统开机">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToCustomIRCodeToBoot/" itemprop="url">
+		如何自定义`IR CODE`进行系统开机
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							获取遥控器按键的IR CODE打开kernel调试开关
+切换到root用户
+
+123khadas@Khadas:~$ suPassword:root@Kh...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToCustomMac/" title=" 如何自定义以太网MAC地址 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToCustomMac/" title="如何自定义以太网MAC地址">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToCustomMac/" itemprop="url">
+		如何自定义以太网MAC地址
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							查看以太网MAC地址
+通过cmdline查看
+
+12khadas@Khadas:~$ cat /proc/cmdlineroot=UUID=be7fd8e...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+	</div>
+	
+	
+	<div id="pagination">
+		
+			<a href="/Blogs/page/20/" data-title="加载更多" data-status="没有了">加载更多</a>
+		
+	</div>
+
+	
+
+</div>
+	
+
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/Blogs/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/Blogs/plugin/search/ziploader.js"></script>
+<script src="/Blogs/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/Blogs/search.zip',
+		version_Path = '/Blogs/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/Blogs/plugin/chinese/chinese.js"></script>
+<script src="/Blogs/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/Blogs/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/Blogs/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/Blogs/plugin/resizediv/resizediv.js"></script>
+<script src="/Blogs/js/main.js"></script>
+
+	</body>	
+</html>

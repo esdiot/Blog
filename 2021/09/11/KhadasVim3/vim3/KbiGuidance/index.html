@@ -1,0 +1,1022 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      Khadas VIM2/VIM3/Edge KBI说明 | NeverSurrender
+    
+  </title>
+  <meta name="author" content="Biao Wang">
+  <meta name="keywords" content="" />
+  <meta name="description" content="VincentW will not give up" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/Blogs/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/Blogs/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/Blogs/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/Blogs/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「Khadas VIM2/VIM3/Edge KBI说明」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/Blogs/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/Blogs/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/Blogs/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" itemprop="url">
+		Khadas VIM2/VIM3/Edge KBI说明
+	</a>
+
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" itemprop="url">
+		<time datetime="2021-09-11T11:01:21.020Z" itemprop="dateUpdated">
+	  		2021-09-11
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<p>KBI是”Khadas Bootloader Instructions”的缩写，主要用于以下几方面：</p>
+<ul>
+<li>控制可编程MCU</li>
+<li>管理底层硬件</li>
+<li>让开发者体验VIM2/VIM3/Edge全部的特性</li>
+</ul>
+<p>这篇文档介绍了如何配置使用KBI。 因为KBI是<a target="_blank" rel="noopener" href="http://www.denx.de/">U-Boot</a> 命令，所以必须先设置串口调试工具(<a href="/vim3/SetupSerialTool.html">VIM2</a>/<a href="/vim3/SetupSerialTool.html">VIM3</a>/<a href="/edge/SetupSerialTool.html">Edge</a>)。</p>
+<p><em>注意：此文档以VIM2为例进行说明，VIM3和Edge都是差不多的用法。</em></p>
+<p>在开始之前，确保先进入U-boot命令行模式:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">normal power off</span><br><span class="line">boot wol: enable</span><br><span class="line">Hit Enter or space or Ctrl+C key to stop autoboot -- :  0 </span><br><span class="line">kvim2#</span><br></pre></td></tr></table></figure>
+
+<h3 id="帮助信息"><a href="#帮助信息" class="headerlink" title="帮助信息"></a>帮助信息</h3><p>和其他U-boot命令一样，直接执行<code>kbi</code>会给出帮助信息：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi</span><br><span class="line">kbi - Khadas Bootloader Instructions sub-system</span><br><span class="line"></span><br><span class="line">Usage:</span><br><span class="line">kbi [function] [mode] [write|read] &lt;value&gt;</span><br><span class="line"></span><br><span class="line">kbi version - read version information</span><br><span class="line">kbi usid - read usid information</span><br><span class="line">kbi adc - read adc value</span><br><span class="line">kbi powerstate - read power on state</span><br><span class="line">kbi poweroff - power off device</span><br><span class="line">kbi ethmac - read ethernet mac address</span><br><span class="line"></span><br><span class="line">kbi led [systemoff|systemon] w &lt;off|on|breathe|heartbeat&gt; - set blue led mode</span><br><span class="line">kbi led [systemoff|systemon] r - read blue led mode</span><br><span class="line"></span><br><span class="line">kbi bootmode w &lt;emmc|spi&gt; - set bootmode to emmc or spi</span><br><span class="line">kbi bootmode r - read current bootmode</span><br><span class="line"></span><br><span class="line">kbi trigger [wol|rtc|ir|dcin|key|gpio] w &lt;0|1&gt; - disable/enable boot trigger</span><br><span class="line">kbi trigger [wol|rtc|ir|dcin|key|gpio] r - read mode of a boot trigger</span><br></pre></td></tr></table></figure>
+
+<h3 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h3><p><strong>1) 获取MCU固件版本号：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi version</span><br><span class="line">version: 03</span><br></pre></td></tr></table></figure>
+
+<p><strong>2) 初始化KBI：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi init</span><br></pre></td></tr></table></figure>
+
+<p><strong>3) 获取设备usid：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi usid</span><br><span class="line">usid: 000000</span><br></pre></td></tr></table></figure>
+
+<p><strong>4) 获取ADC数值：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi adc</span><br><span class="line">adc: 0x236</span><br></pre></td></tr></table></figure>
+<p><em>ADC数值用于区分不同的Khadas开发板。</em></p>
+<p><strong>5) 给设备断电：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi poweroff</span><br></pre></td></tr></table></figure>
+
+<p><strong>6) 获取以太网MAC地址：</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi ethmac</span><br><span class="line">mac address: 98:aa:fc:60:44:c0</span><br></pre></td></tr></table></figure>
+
+<p><strong>7) 设置LED工作模式：</strong><br>VIM2蓝色LED有不同的工作模式，如<code>长灭</code>、<code>长亮</code>、<code>呼吸</code>和<code>心跳</code>等来只是不同的状态。</p>
+<p>VIM2 蓝色LED是由MCU来控制的，同时MCU还控制VIM2的总电源，而VIM2白色LED是由Amlogic CPU来控制的，所以蓝色LED会一直工作，即使你关闭了VIM2电源。</p>
+<p>事实上，KBI能设置两种不同的蓝灯模式：</p>
+<ul>
+<li>系统关闭/待机：断电状态，CPU断电。</li>
+<li>系统运行/工作：上电状态，CPU工作。</li>
+</ul>
+<p>示例：</p>
+<p>查看系统关闭/待机时的蓝灯模式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi led systemoff r</span><br><span class="line">led mode: breathe  [systemoff]</span><br></pre></td></tr></table></figure>
+
+<p>查看系统运行/工作时的蓝灯模式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi led systemon r</span><br><span class="line">led mode: off  [systemon]</span><br></pre></td></tr></table></figure>
+
+<p>上面显示当系统运行时蓝灯状态为<code>长灭</code>，你可以改为<code>呼吸灯</code>模式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi led systemon w breathe</span><br></pre></td></tr></table></figure>
+
+<p>同样的，对于系统关闭时的蓝灯状态，你也可以设置为别的模式，如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi led systemon w breathe</span><br></pre></td></tr></table></figure>
+
+<p><strong>8) 启动模式</strong><br>VIM2配置有eMMC和SPI存储器，可以通过KBI设置从哪里启动系统。</p>
+<p>设置默认从SPI Flash启动系统：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi bootmode w spi</span><br></pre></td></tr></table></figure>
+<p>*关于SPI FLASH启动请参考如何从SPI Flash启动(<a target="_blank" rel="noopener" href="http://forum.khadas.com/t/how-to-boot-from-spi-flash/1354">VIM2</a>/<a href="/vim3/BootFromSpiFlash.html">VIM3</a>/<a href="/edge/BootFromSpiFlash.html">Edge</a>)*。</p>
+<p>设置默认从eMMC启动系统：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi bootmode w emmc</span><br></pre></td></tr></table></figure>
+
+<p>查看当前启动模式：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi bootmode r</span><br><span class="line">bootmode: emmc</span><br></pre></td></tr></table></figure>
+
+<p><strong>9) 开机触发事件</strong><br>VIM2支持不同的开机触发事件：</p>
+<ul>
+<li>WOL: 通过网络唤醒开机</li>
+<li>RTC: 通过RTC唤醒开机</li>
+<li>IR: 通过红外唤醒开机</li>
+<li>DCIN: 通过DC输入唤醒开机</li>
+<li>Key: 通过电源键唤醒开机</li>
+<li>GPIO: 通过外部GPIO唤醒开机</li>
+</ul>
+<p>这意味着，当VIM2关机时，上述任意一个事件在使能的情况下可以触发VIM2开机。</p>
+<p>示例：</p>
+<p>获取WOL触发使能状态：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi trigger wol r</span><br><span class="line">boot wol: disable</span><br></pre></td></tr></table></figure>
+
+<p>出厂固件WOL是默认关闭的。你可以通过如下方式打开WOL触发：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi trigger wol w 1</span><br><span class="line">set_wol: 1</span><br></pre></td></tr></table></figure>
+
+<p>当然，出于安全的角度考虑，你可能需要关闭WOL触发：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kvim2# kbi trigger wol w 0</span><br><span class="line">set_wol: 0</span><br></pre></td></tr></table></figure>
+
+<h3 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h3><p><a href="/vim2/HowtoUseWol.html">如何使用WOL</a>。<br><a target="_blank" rel="noopener" href="https://dl.khadas.com/Hardware/Edge/MCU/Edge-V_MCU_REG_ZH.pdf">Edge-V MCU寄存器说明</a><br><a target="_blank" rel="noopener" href="https://dl.khadas.com/Hardware/VIM2/MCU/VIM2_MCU_REG_ZH.pdf">VIM2 MCU寄存器说明</a><br><a target="_blank" rel="noopener" href="https://dl.khadas.com/Hardware/VIM3/MCU/VIM3_MCU_REG_ZH.pdf">VIM3 MCU寄存器说明</a></p>
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/Blogs/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/13/WSL_X11/" title="">
+											
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 13日, 2021				
+							</p>
+							<p class="relate-post-content">
+								WSL_X11_RemoteLogin远程登录 WSL可视化界面操作
+1234567891011121314151617181920212223sudo apt-get update &amp;&amp; sudo apt-get u...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/13/WSL_X11/" title="">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">
+								安装Amlogic平台交叉编译器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								编译Amlogic平台需要安装交叉编译器，按如下步骤安装。
+安装U-Boot BL交叉编译器123456$ sudo apt-get install gcc-arm-none-eabi$ wget https://releases.l...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="安装Amlogic平台交叉编译器"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">
+								Krescue - 助你玩转khadas			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								什么是krescueKrescue是一个非常小(21mb)的操作系统，您可以直接从micro SD卡或EMMC启动。它是一把“瑞士军刀”，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是，通过转储一个原始压缩的.img.g...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Krescue - 助你玩转khadas"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/ListOfCompatibleNVMeSSDs/" title="List of compatible NVMe SSDs">
+								List of compatible NVMe SSDs			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								TODO
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/ListOfCompatibleNVMeSSDs/" title="List of compatible NVMe SSDs">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="List of compatible NVMe SSDs"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/LoadImagesWithUBootViaTFTP/" title="通过TFTP下载镜像">
+								通过TFTP下载镜像			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								在有线网络连接正常的情况下，U-boot能通过TFTP非常方便的下载更新镜像文件。
+准备
+ 搭建TFTP服务器
+
+更新U-boot12kvim# tftp 1080000 u-boot.binkvim# store rom_write...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/LoadImagesWithUBootViaTFTP/" title="通过TFTP下载镜像">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="通过TFTP下载镜像"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupSerialTool/" title="设置串口调试工具">
+								设置串口调试工具			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								准备工作
+ 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具
+
+如何连接请按下面方式连接：
+1) 连接所需的GPIO, 确保TX/RX连接正确
+* Tool Pin `GND`: &lt;---&gt; `Pin17...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupSerialTool/" title="设置串口调试工具">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="设置串口调试工具"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupTFTPServer/" title="搭建TFTP服务器">
+								搭建TFTP服务器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								很常用的搭建方法，你也可以通过Google搜索相关信息。
+这里我们提供一个参考。
+Ubuntu16.04设置TFTP安装TFTP相关软件包：
+1$ sudo apt-get install openbsd-inetd tftpd tf...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupTFTPServer/" title="搭建TFTP服务器">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="搭建TFTP服务器"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/UBootUsage/" title="U-boot使用说明">
+								U-boot使用说明			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								通过U盘烧录boot.img拷贝 boot.img 到U盘, 然后插入到VIM USB，执行如下命令
+1kvim# usb_update boot boot.img
+
+通过SD卡烧录boot.img拷贝 boot.img SD卡, 然...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/UBootUsage/" title="U-boot使用说明">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="U-boot使用说明"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/UpgradeViaTFBurningCard/" title="通过TF卡升级固件">
+								通过TF卡升级固件			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								这里以安卓为例，Ubuntu的升级与安卓一致。
+注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。
+准备工作
+下载Burn Card Maker Tool 并解压。
+准备好TF卡的读卡器。...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/UpgradeViaTFBurningCard/" title="通过TF卡升级固件">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="通过TF卡升级固件"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/Blogs/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/Blogs/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/Blogs/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/Blogs/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/Blogs/plugin/search/ziploader.js"></script>
+<script src="/Blogs/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/Blogs/search.zip',
+		version_Path = '/Blogs/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/Blogs/plugin/chinese/chinese.js"></script>
+<script src="/Blogs/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/Blogs/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/Blogs/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/Blogs/plugin/resizediv/resizediv.js"></script>
+<script src="/Blogs/js/main.js"></script>
+
+	</body>	
+</html>

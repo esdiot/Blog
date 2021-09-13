@@ -1,0 +1,1707 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      VIM3 相关文档 | NeverSurrender
+    
+  </title>
+  <meta name="author" content="Biao Wang">
+  <meta name="keywords" content="" />
+  <meta name="description" content="VincentW will not give up" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/Blogs/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/Blogs/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/Blogs/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/Blogs/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「VIM3 相关文档」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/Blogs/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/Blogs/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/Blogs/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/index/" itemprop="url">
+		VIM3 相关文档
+	</a>
+
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/index/" itemprop="url">
+		<time datetime="2021-09-11T11:01:21.020Z" itemprop="dateUpdated">
+	  		2021-09-11
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h1 id="VIM3"><a href="#VIM3" class="headerlink" title="VIM3"></a>VIM3</h1><p><img src="/images/vim3/docs_vim3.jpg" alt="image"></p>
+<h2 id="正面-蓝色标识"><a href="#正面-蓝色标识" class="headerlink" title="正面(蓝色标识)"></a>正面(蓝色标识)</h2><table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="left">设备名称</th>
+<th align="left">描述说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="left">USB-A</td>
+<td align="left">USB 3.0接口,最大输出电流900mA,PCIE被激活时,这个口降为2.0</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="left">RJ-45</td>
+<td align="left">有<a href="/vim3/HowtoUseWol.html">WOL功能</a>的Gigabit网口</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="left">HDMI</td>
+<td align="left">支持3D,HDR,CEC以及HDCP2.2的HDMI接口</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="left">USB-C</td>
+<td align="left">USB2.0 OTG接口,接受<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/power-adapter">5V</a>到<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/usb-c-24w-adapter">20V</a>的输入,<a href="/vim3/UpgradeViaUSBCable.html">可用于升级固件</a></td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="left">USB-A</td>
+<td align="left">USB 2.0接口,最大输出电流500mA</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="left">风扇座子</td>
+<td align="left">PWM控制的4线制<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/3705-cooling-fan">风扇</a></td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="left">reset按键</td>
+<td align="left">用于强制重启板子,按下会直接复位</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="left">function按键</td>
+<td align="left">快速短按3下进入<a href="/vim3/HowtoBootIntoUpgradeMode.html">MaskROM模式</a>或从外部介质启动</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="left">power按键</td>
+<td align="left">用于关机或者配合其他按键使用</td>
+</tr>
+<tr>
+<td align="right">A</td>
+<td align="left">4个M2插孔</td>
+<td align="left">用于使用<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/new-vim-heatsink">散热器</a>和<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/diy-case">DIY外壳</a>时的固定</td>
+</tr>
+<tr>
+<td align="right">B</td>
+<td align="left">G-Sensor</td>
+<td align="left">三轴加速传感器</td>
+</tr>
+<tr>
+<td align="right">C</td>
+<td align="left">RTC电池接口</td>
+<td align="left">硬件时钟电池的接口</td>
+</tr>
+<tr>
+<td align="right">D</td>
+<td align="left"><a href="/vim3/GPIOPinout.html">40脚的GPIO</a></td>
+<td align="left">可用于控制<a href="vim3/HowToAccessGpio.html">GPIO</a>或者与<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/tone-board">toneboard</a>连接</td>
+</tr>
+<tr>
+<td align="right">E</td>
+<td align="left">GPIO扩展芯片</td>
+<td align="left">为VIM3拓展可用的GPIO</td>
+</tr>
+<tr>
+<td align="right">F</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://docs.khadas.com/vim3/KbiGuidance.html">MCU</a></td>
+<td align="left">可编程的EEPROM阵列的STM8S003微控制器</td>
+</tr>
+<tr>
+<td align="right">G</td>
+<td align="left">WOL选择开关</td>
+<td align="left">WOL功能的电源开关</td>
+</tr>
+<tr>
+<td align="right">H</td>
+<td align="left">红外模块</td>
+<td align="left">可用于与<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/ir-remote">khadas遥控器</a>通信</td>
+</tr>
+<tr>
+<td align="right">I</td>
+<td align="left">LED灯</td>
+<td align="left">用于指示板子的状态</td>
+</tr>
+<tr>
+<td align="right">J</td>
+<td align="left">IPEX天线</td>
+<td align="left">用于插<a href="/vim3/HowToConnectWifi.html">wifi</a>和<a href="/vim3/HowToSetupBluetooth.html">蓝牙</a>的天线</td>
+</tr>
+<tr>
+<td align="right">k</td>
+<td align="left">IPEX天线</td>
+<td align="left">用于插<a href="/vim3/HowToConnectWifi.html">wifi</a>和<a href="/vim3/HowToSetupBluetooth.html">蓝牙</a>的天线</td>
+</tr>
+</tbody></table>
+<h2 id="背面-红色"><a href="#背面-红色" class="headerlink" title="背面(红色)"></a>背面(红色)</h2><table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="left">设备名称</th>
+<th align="left">描述说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/vin-to-vin-cable">VIN</a></td>
+<td align="left">5V电压输出</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="left"><a href="/vim3/BootFromExtMedia.html">SD卡插座</a></td>
+<td align="left">用于从外部介质启动SD卡系统或者作为外部存储器</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="left">限流开关</td>
+<td align="left">防止在负载不均衡的情况下损坏VIM3</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="left">M.2接口</td>
+<td align="left">PCIE2.0接口(x1 lane),支持<a href="/vim3/ListOfCompatibleNVMeSSDs.html">M.2 2280 NVME固态硬盘</a></td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="left">TP</td>
+<td align="left">10脚0.5mm间距FTP接口</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="left"><a href="/vim3/ConnectLcd.html">MIPI-DSI接口</a></td>
+<td align="left">30脚0.5mm间距的FPC接口,可用于连接<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/ts050-touchscreen">TS050触控屏</a></td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="left">MIPI-CSI接口</td>
+<td align="left">30脚，0.5mm间距，4通道，双摄像头，8MP图像信号处理</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="left"><a href="/vim3/BootFromSpiFlash.html">SPI Flash</a></td>
+<td align="left">通过SPI控制的Flash模块</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="left">XPWR焊盘</td>
+<td align="left">用于连接使用外部电源</td>
+</tr>
+<tr>
+<td align="right">A</td>
+<td align="left">M寄存器</td>
+<td align="left">可在任何情况下,强制EMMC进入<a href="/vim3/HowtoBootIntoUpgradeMode.html">MaskROM模式</a></td>
+</tr>
+<tr>
+<td align="right">B</td>
+<td align="left">S寄存器</td>
+<td align="left">可在任何情况下,强制Flash进入<a href="/vim3/HowtoBootIntoUpgradeMode.html">MaskROM模式</a></td>
+</tr>
+<tr>
+<td align="right">C</td>
+<td align="left">限流开关</td>
+<td align="left">防止在负载不均衡的情况下损坏VIM3</td>
+</tr>
+</tbody></table>
+<h2 id="按键"><a href="#按键" class="headerlink" title="按键"></a>按键</h2><table>
+<thead>
+<tr>
+<th align="center">Reset</th>
+<th align="center">Function</th>
+<th align="center">Power</th>
+<th align="left">描述说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">x</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="left">强制重启VIM3</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">x</td>
+<td align="center"></td>
+<td align="left"><a href="/vim3/HowtoBootIntoUpgradeMode.html">进入升级模式(TST模式)</a></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">x</td>
+<td align="left">开机或者唤醒VIM3</td>
+</tr>
+<tr>
+<td align="center">x</td>
+<td align="center"></td>
+<td align="center">x</td>
+<td align="left"><a href="/vim3/HowtoBootIntoUpgradeMode.html">进入升级模式(按键模式)</a></td>
+</tr>
+<tr>
+<td align="center">x</td>
+<td align="center">x</td>
+<td align="center">x</td>
+<td align="left"><a href="/vim3/HowtoEraseEMMC.html">清除EMMC</a></td>
+</tr>
+</tbody></table>
+<h2 id="LED灯指示"><a href="#LED灯指示" class="headerlink" title="LED灯指示"></a>LED灯指示</h2><table>
+<thead>
+<tr>
+<th align="right">颜色</th>
+<th align="center">状态</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">蓝色</td>
+<td align="center">关闭</td>
+<td align="left">电源关闭</td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="center">常亮</td>
+<td align="left">已连接电源,板子处于关机状态</td>
+</tr>
+<tr>
+<td align="right">白色</td>
+<td align="center">关闭</td>
+<td align="left">板子已关机</td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="center">常亮</td>
+<td align="left">板子处于开机状态</td>
+</tr>
+<tr>
+<td align="right">红灯</td>
+<td align="center">None</td>
+<td align="left">None</td>
+</tr>
+</tbody></table>
+<p>上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系&gt;统都不同）编程的更多信息可通过<a href="forum.khadas">forum.khadas.com</a>咨询。</p>
+<h1 id="VIM3L"><a href="#VIM3L" class="headerlink" title="VIM3L"></a>VIM3L</h1><p><img src="/images/vim3/docs_vim3l.jpg" alt="image"></p>
+<h2 id="正面-蓝色标识-1"><a href="#正面-蓝色标识-1" class="headerlink" title="正面(蓝色标识)"></a>正面(蓝色标识)</h2><table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="left">设备名称</th>
+<th align="left">描述说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="left">USB-A</td>
+<td align="left">USB 3.0接口,最大输出电流900mA,PCIE被激活时,这个口降为2.0</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="left">RJ-45</td>
+<td align="left">有<a href="/vim3/HowtoUseWol.html">WOL功能</a>的Gigabit网口</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="left">HDMI</td>
+<td align="left">支持3D,HDR,CEC以及HDCP2.2的HDMI接口</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="left">USB-C</td>
+<td align="left">USB2.0 OTG接口,接受<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/power-adapter">5V</a>到<a href="(https://www.khadas.com/product-page/usb-c-24w-adapter)%E7%9A%84%E8%BE%93%E5%85%A5,%5B%E5%8F%AF%E7%94%A8%E4%BA%8E%E5%8D%87%E7%BA%A7%E5%9B%BA%E4%BB%B6%5D(/vim3/UpgradeViaUSBCable.html">20V</a></td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="left">USB-A</td>
+<td align="left">USB 2.0接口,最大输出电流500mA</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="left">风扇座子</td>
+<td align="left">PWM控制的4线制<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/3705-cooling-fan">风扇</a></td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="left">reset按键</td>
+<td align="left">用于强制重启板子,按下会直接复位</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="left">function按键</td>
+<td align="left">快速短按3下进入<a href="/vim3/HowtoBootIntoUpgradeMode.html">MaskROM模式</a>或从外部介质启动</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="left">power按键</td>
+<td align="left">用于关机或者配合其他按键使用</td>
+</tr>
+<tr>
+<td align="right">A</td>
+<td align="left">4个M2插孔</td>
+<td align="left">用于使用<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/new-vim-heatsink">散热器</a>和<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/diy-case">DIY外壳</a>时的固定</td>
+</tr>
+<tr>
+<td align="right">B</td>
+<td align="left">G-Sensor</td>
+<td align="left">三轴加速传感器</td>
+</tr>
+<tr>
+<td align="right">C</td>
+<td align="left">RTC电池接口</td>
+<td align="left">硬件时钟电池的接口</td>
+</tr>
+<tr>
+<td align="right">D</td>
+<td align="left"><a href="/vim3/GPIOPinout.html">40脚的GPIO</a></td>
+<td align="left">可用于控制GPIO(vim3/HowToAccessGpio.html)或者与<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/tone-board">toneboard</a>连接</td>
+</tr>
+<tr>
+<td align="right">E</td>
+<td align="left">GPIO扩展芯片</td>
+<td align="left">为VIM3拓展可用的GPIO</td>
+</tr>
+<tr>
+<td align="right">F</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://docs.khadas.com/vim3/KbiGuidance.html">MCU</a></td>
+<td align="left">可编程的EEPROM阵列的STM8S003微控制器</td>
+</tr>
+<tr>
+<td align="right">G</td>
+<td align="left">WOL选择开关</td>
+<td align="left">WOL功能的电源开关</td>
+</tr>
+<tr>
+<td align="right">H</td>
+<td align="left">红外模块</td>
+<td align="left">可用于与<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/ir-remote">khadas遥控器</a>通信</td>
+</tr>
+<tr>
+<td align="right">I</td>
+<td align="left">LED灯</td>
+<td align="left">用于指示板子的状态</td>
+</tr>
+<tr>
+<td align="right">J</td>
+<td align="left">IPEX天线</td>
+<td align="left">用于插<a href="/vim3/HowToConnectWifi.html">wifi</a>和<a href="/vim3/HowToSetupBluetooth.html">蓝牙</a>的天线</td>
+</tr>
+<tr>
+<td align="right">k</td>
+<td align="left">IPEX天线</td>
+<td align="left">用于插<a href="/vim3/HowToConnectWifi.html">wifi</a>和<a href="/vim3/HowToSetupBluetooth.html">蓝牙</a>的天线</td>
+</tr>
+</tbody></table>
+<h2 id="背面-红色-1"><a href="#背面-红色-1" class="headerlink" title="背面(红色)"></a>背面(红色)</h2><table>
+<thead>
+<tr>
+<th align="right"></th>
+<th align="left">设备名称</th>
+<th align="left">描述说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">1</td>
+<td align="left"><a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/vin-to-vin-cable">VIN</a></td>
+<td align="left">5V电压输出</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td align="left"><a href="/vim3/BootFromExtMedia.html">SD卡插座</a></td>
+<td align="left">用于从外部介质启动SD卡系统或者作为外部存储器</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td align="left">限流开关</td>
+<td align="left">防止在负载不均衡的情况下损坏VIM3</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td align="left">M.2接口</td>
+<td align="left">PCIE2.0接口(x1 lane),支持<a href="/vim3/ListOfCompatibleNVMeSSDs.html">M.2 2280 NVME固态硬盘</a></td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td align="left">TP</td>
+<td align="left">10脚0.5mm间距FTP接口</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td align="left"><a href="/vim3/ConnectLcd.html">MIPI-DSI接口</a></td>
+<td align="left">30脚0.5mm间距的FPC接口,可用于连接<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/ts050-touchscreen">TS050触控屏</a></td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td align="left">MIPI-CSI接口</td>
+<td align="left">30脚，0.5mm间距，4通道，双摄像头，8MP图像信号处理</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td align="left"><a href="/vim3/BootFromSpiFlash.html">SPI Flash</a></td>
+<td align="left">通过SPI控制的Flash模块</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td align="left">XPWR焊盘</td>
+<td align="left">用于连接使用外部电源</td>
+</tr>
+<tr>
+<td align="right">A</td>
+<td align="left">M寄存器</td>
+<td align="left">可在任何情况下,强制EMMC进入<a href="/vim3/HowtoBootIntoUpgradeMode.html">MaskROM模式</a></td>
+</tr>
+<tr>
+<td align="right">B</td>
+<td align="left">S寄存器</td>
+<td align="left">可在任何情况下,强制Flash进入<a href="/vim3/HowtoBootIntoUpgradeMode.html">MaskROM模式</a></td>
+</tr>
+<tr>
+<td align="right">C</td>
+<td align="left">限流开关</td>
+<td align="left">防止在负载不均衡的情况下损坏VIM3</td>
+</tr>
+</tbody></table>
+<h2 id="按键-1"><a href="#按键-1" class="headerlink" title="按键"></a>按键</h2><table>
+<thead>
+<tr>
+<th align="center">Reset</th>
+<th align="center">Function</th>
+<th align="center">Power</th>
+<th align="left">描述说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">x</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="left">强制重启VIM3</td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center">x</td>
+<td align="center"></td>
+<td align="left"><a href="/vim3/HowtoBootIntoUpgradeMode.html">进入升级模式(TST模式)</a></td>
+</tr>
+<tr>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">x</td>
+<td align="left">开机或者唤醒VIM3</td>
+</tr>
+<tr>
+<td align="center">x</td>
+<td align="center"></td>
+<td align="center">x</td>
+<td align="left"><a href="/vim3/HowtoBootIntoUpgradeMode.html">进入升级模式(按键模式)</a></td>
+</tr>
+<tr>
+<td align="center">x</td>
+<td align="center">x</td>
+<td align="center">x</td>
+<td align="left"><a href="/vim3/HowtoEraseEMMC.html">清除EMMC</a></td>
+</tr>
+</tbody></table>
+<h2 id="LED灯指示-1"><a href="#LED灯指示-1" class="headerlink" title="LED灯指示"></a>LED灯指示</h2><table>
+<thead>
+<tr>
+<th align="right">颜色</th>
+<th align="center">状态</th>
+<th align="left">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="right">蓝色</td>
+<td align="center">关闭</td>
+<td align="left">电源关闭</td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="center">常亮</td>
+<td align="left">已连接电源,板子处于关机状态</td>
+</tr>
+<tr>
+<td align="right">白色</td>
+<td align="center">关闭</td>
+<td align="left">板子已关机</td>
+</tr>
+<tr>
+<td align="right"></td>
+<td align="center">常亮</td>
+<td align="left">板子处于开机状态</td>
+</tr>
+<tr>
+<td align="right">红灯</td>
+<td align="center">None</td>
+<td align="left">None</td>
+</tr>
+</tbody></table>
+<p>上述行为是默认的，用户可以更改。例如，可以使白灯闪烁或呼吸。有关如何通过所喜爱的操作系统（每个操作系&gt;统都不同）编程的更多信息可通过<a href="forum.khadas">forum.khadas.com</a>咨询。</p>
+<h2 id="GPIO管脚映射"><a href="#GPIO管脚映射" class="headerlink" title="GPIO管脚映射"></a>GPIO管脚映射</h2><table>
+<thead>
+<tr>
+<th>SIGNAL</th>
+<th align="left">PIN</th>
+<th align="left">PIN</th>
+<th align="left">SIGNAL</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>5V</td>
+<td align="left">1</td>
+<td align="left">21</td>
+<td align="left">GND</td>
+</tr>
+<tr>
+<td>5V</td>
+<td align="left">2</td>
+<td align="left">22</td>
+<td align="left">I2C_M3_SCL</td>
+</tr>
+<tr>
+<td>USB_DM</td>
+<td align="left">3</td>
+<td align="left">23</td>
+<td align="left">I2C_M3_SDA</td>
+</tr>
+<tr>
+<td>USB_DP</td>
+<td align="left">4</td>
+<td align="left">24</td>
+<td align="left">GND</td>
+</tr>
+<tr>
+<td>GND</td>
+<td align="left">5</td>
+<td align="left">25</td>
+<td align="left">I2C_AO_SCK</td>
+</tr>
+<tr>
+<td>VCC_MCU</td>
+<td align="left">6</td>
+<td align="left">26</td>
+<td align="left">I2C_AO_SDA</td>
+</tr>
+<tr>
+<td>MCU_NRST</td>
+<td align="left">7</td>
+<td align="left">27</td>
+<td align="left">3.3V</td>
+</tr>
+<tr>
+<td>MCU_SWIM</td>
+<td align="left">8</td>
+<td align="left">28</td>
+<td align="left">GND</td>
+</tr>
+<tr>
+<td>GND</td>
+<td align="left">9</td>
+<td align="left">29</td>
+<td align="left">I2SB_SCLK</td>
+</tr>
+<tr>
+<td>ADC_CH0</td>
+<td align="left">10</td>
+<td align="left">30</td>
+<td align="left">I2S_MCLK0</td>
+</tr>
+<tr>
+<td>1.8V</td>
+<td align="left">11</td>
+<td align="left">31</td>
+<td align="left">I2SB_SDO</td>
+</tr>
+<tr>
+<td>ADC_CH3</td>
+<td align="left">12</td>
+<td align="left">32</td>
+<td align="left">I2SB_LRCK</td>
+</tr>
+<tr>
+<td>SPDIF_OUT</td>
+<td align="left">13</td>
+<td align="left">33</td>
+<td align="left">I2SB_SDI</td>
+</tr>
+<tr>
+<td>GND</td>
+<td align="left">14</td>
+<td align="left">34</td>
+<td align="left">GND</td>
+</tr>
+<tr>
+<td>UARTC_RX</td>
+<td align="left">15</td>
+<td align="left">35</td>
+<td align="left">PWM_F</td>
+</tr>
+<tr>
+<td>UARTC_TX</td>
+<td align="left">16</td>
+<td align="left">36</td>
+<td align="left">RTC_CLK</td>
+</tr>
+<tr>
+<td>GND</td>
+<td align="left">17</td>
+<td align="left">37</td>
+<td align="left">GPIOH_4</td>
+</tr>
+<tr>
+<td>Linux_RX</td>
+<td align="left">18</td>
+<td align="left">38</td>
+<td align="left">MCU_PA1</td>
+</tr>
+<tr>
+<td>Linux_TX</td>
+<td align="left">19</td>
+<td align="left">39</td>
+<td align="left">GPIODZ_15</td>
+</tr>
+<tr>
+<td>3.3V</td>
+<td align="left">20</td>
+<td align="left">40</td>
+<td align="left">GND</td>
+</tr>
+</tbody></table>
+<h1 id="Krescue-Khadas-Rescue-OS"><a href="#Krescue-Khadas-Rescue-OS" class="headerlink" title="Krescue (Khadas-Rescue-OS)"></a>Krescue (Khadas-Rescue-OS)</h1><p><img src="/images/docs_krescue_online_install.jpg" alt="image"></p>
+<p><a target="_blank" rel="noopener" href="https://dl.khadas.com/Firmware/Krescue/dump/README-rescue.txt">Krescue</a> 是一个非常小（21MB）的操作系统，您可以直接从micro-SD卡或EMMC启动。它就像是一把”瑞士军刀”，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是通过转储一个原始压缩的.img.gz来备份EMMC，并通过将.img.gz刷新回EMMC来快速安装新操作系统。从2020年1月起，Krescue可以通过有线以太网直接从网络下载和安装操作系统映像。</p>
+<p><strong>主要特性:</strong></p>
+<ul>
+<li>将EMMC的中的内容通过<a target="_blank" rel="noopener" href="https://dl.khadas.com/Firmware/Krescue/dump/image2sd.readme.txt">SD卡</a>,<a target="_blank" rel="noopener" href="https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-usb-otg-mode-disks.txt">USB存储设备</a>或者<a target="_blank" rel="noopener" href="https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-http-disks.txt">网络</a>备份。</li>
+<li>从其他设备或者网络覆写img.gz格式的固件到EMMC</li>
+<li>通过网络直接安装系统</li>
+<li>查看硬件设备信息</li>
+<li>给有专业知识的用户准备的应急shell</li>
+<li>通过串口，USB网络接口或者网络接口使用<a target="_blank" rel="noopener" href="https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-access.txt">shell访问</a>系统。</li>
+</ul>
+<p><strong>启动Krescue的<a target="_blank" rel="noopener" href="https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-begin.txt">步骤</a></strong></p>
+<ol>
+<li>从<a target="_blank" rel="noopener" href="https://dl.khadas.com/Firmware/Krescue/dump/">dl.khadas.com</a>上下载合适你板子使用的VIM3/VIM3L的镜像。</li>
+<li>使用启动盘制作工具(<a target="_blank" rel="noopener" href="https://www.balena.io/etcher/">Etcher</a>，<a target="_blank" rel="noopener" href="https://rufus.ie/">rufus</a>)将下载的镜像烧录到SD中。</li>
+<li>将SD卡插到板子上，同时插上HDMI，用USB-C供电</li>
+<li>启动板子进入<a target="_blank" rel="noopener" href="https://dl.khadas.com/Firmware/Krescue/dump/README-rescue-boot.txt">MaskROM模式</a>(请仔细阅读这个谅解的文档！！！)</li>
+<li>使用<a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/ir-remote">khadas遥控器</a>和USB的键盘就可以操作UI界面了。</li>
+</ol>
+<p><strong>通过shell命令在线安装</strong></p>
+<p>获取帮助信息:</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">curl -sfL dl.khadas.com/.mega | sh -s - --help</span><br><span class="line">wget -O-  dl.khadas.com/.mega | sh -s - --help</span><br></pre></td></tr></table></figure>
+
+<p>通过web将Krescue目录下载到EMMC</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">curl -sfL dl.khadas.com/.mega | sh -s - VIM1  &gt; /dev/mmcblk? &lt;tab auto-complete&gt;</span><br><span class="line">curl -sfL dl.khadas.com/.mega | sh -s - VIM2  &gt; /dev/mmcblk? &lt;tab auto-complete&gt;</span><br><span class="line">curl -sfL dl.khadas.com/.mega | sh -s - VIM3  &gt; /dev/mmcblk? &lt;tab auto-complete&gt;</span><br><span class="line">curl -sfL dl.khadas.com/.mega | sh -s - VIM3L &gt; /dev/mmcblk? &lt;tab auto-complete&gt;</span><br></pre></td></tr></table></figure>
+
+<p>更多shell命令和示例:</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://dl.khadas.com/Firmware/Krescue/mega/README.megaimage_online.txt">README.megaimage_online.txt</a></li>
+</ul>
+<p><strong>更多:</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://youtu.be/ER4BOJUhoYU">YouTube - Krescue Introduction</a></li>
+<li><a target="_blank" rel="noopener" href="https://youtu.be/vvpkbhnyhZY">YouTube - Krescue Online OS Installation</a></li>
+<li><a target="_blank" rel="noopener" href="https://forum.khadas.com/t/krescue-take-full-control-of-your-vim-device/5945">Khadas Forum - Krescue Help &amp; Discussion</a></li>
+</ul>
+<h1 id="Amlogic-A311D-NPU使用指南"><a href="#Amlogic-A311D-NPU使用指南" class="headerlink" title="Amlogic A311D, NPU使用指南"></a>Amlogic A311D, NPU使用指南</h1><p>以下文档链接将帮助您开始使用VIM3的5.0tops神经处理单元。</p>
+<ol>
+<li><a href="/vim3/HowToUseNpu.html">How to Use NPU</a></li>
+<li><a href="/vim3/HowToInstallDarknet.html">Install Darknet</a></li>
+<li><a href="/vim3/HowToTrainYolo.html">Train Yolo</a></li>
+<li><a href="/vim3/HowToTransformYolo.html">Transform Yolo</a></li>
+<li><a href="/vim3/HowToTrainInception.html">Train Inception</a></li>
+</ol>
+<p><strong>更多:</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=aQ-g_CBrzEU">YouTube: VIM3 - Realtime Object Detection Using Yolo v3</a></li>
+</ul>
+<h1 id="VIM3-电源选择"><a href="#VIM3-电源选择" class="headerlink" title="VIM3 电源选择"></a>VIM3 电源选择</h1><p>尽管您的VIM3 SBC与各种类型的电源兼容，但这些是最佳性能输出和稳定性的推荐规格。</p>
+<ol>
+<li>5V,2A 电源适配器</li>
+<li>Type-C数据线</li>
+</ol>
+<p><strong>更多：</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/power-adapter">Khadas Shop - 电源适配器</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/usb-c-cable">Khadas Shop - Type-C数据线</a></li>
+<li><a href="/vim3/ExtraPowerInput.html">Khadas VIMs 外部供电接口</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.khadas.com/vim">Khadas VIM 规格</a></li>
+</ul>
+<h1 id="显示器-amp-amp-用户输入"><a href="#显示器-amp-amp-用户输入" class="headerlink" title="显示器　&amp;&amp; 用户输入"></a>显示器　&amp;&amp; 用户输入</h1><p>当您需要将VIM3 SBC连接到外部显示器+键盘鼠标+遥控器，以用作台式计算机或媒体中心时，这些选项非常有用</p>
+<ol>
+<li>4K HDMI 2.0 的数据线</li>
+<li>兼容1080P和4K的显示器</li>
+<li>无线的鼠标和键盘</li>
+<li>兼容CEC的遥控器</li>
+</ol>
+<p><strong>更多：</strong><br><a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/hdmi-cable">Khadas Shop - HDMI数据线</a><br><a target="_blank" rel="noopener" href="https://www.khadas.com/product-page/ir-remote">Khadas Shop - 遥控器</a><br><a target="_blank" rel="noopener" href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias=electronics&field-keywords=wireless+keyboard+and+mouse&rh=n:172282,k:wireless+keyboard+and+mouse">亚马逊－无线鼠标和键盘</a></p>
+<h1 id="制作可引导-烧录的SD卡-U盘驱动器"><a href="#制作可引导-烧录的SD卡-U盘驱动器" class="headerlink" title="制作可引导/烧录的SD卡/U盘驱动器"></a>制作可引导/烧录的SD卡/U盘驱动器</h1><p>当您想通过SD卡或U盘驱动器（烧录卡）升级VIM3 SBC的操作系统时，这些项目非常有用。或者，如果您想运行只能从外部Medi A（烧录卡）运行的操作系统，如LibreELEC。</p>
+<ol>
+<li>不小于8GB的SD卡。</li>
+<li>读卡器。</li>
+<li>笔记本电脑、台式电脑。</li>
+<li>不小于8GB的U盘。</li>
+</ol>
+<p><strong>更多：</strong><br><a href="/vim3/BootingCardVsBurningCard.html">启动卡与烧录卡的比较</a><br><a href="/vim3/UpgradeViaTFBurningCard.html">通过TF卡升级安卓</a><br><a href="/vim3/BootFromExtMedia.html">从外部媒体介质启动系统</a><br><a href="/vim3/HowtoBootIntoUpgradeMode.html">如何进入升级模式</a></p>
+<p><strong>提示:</strong></p>
+<ul>
+<li>应使用USB-C数据线从Ubuntu或Windows主机直接将<strong>emmc固件</strong>刻录到<code>emmc</code>。不能将其烧录到SD卡中。例如：android和ubuntu发行版包含“emmc”标记。</li>
+<li><strong>sd/usb固件</strong>应复制到一张sd卡中，然后使用该卡用新操作系统重新格式化emmc存储。例如：Armbian、Ubuntu发行版包含到’sd_usb’标记，以及LibELEC。</li>
+<li>为了从<strong>sd/usb images</strong>启动，您需要在您的emmc上运行android或ubuntu，并激活多启动。</li>
+</ul>
+<h1 id="使用Type-C升级EMMC系统"><a href="#使用Type-C升级EMMC系统" class="headerlink" title="使用Type-C升级EMMC系统"></a>使用Type-C升级EMMC系统</h1><p>如果您想使用笔记本电脑或台式电脑升级存储在EMMC存储器中的VIM3 SBC操作系统，则需要这些项目。例如，将启动操作系统从android改为ubuntu，或者安装更具特色的第三方操作系统。</p>
+<ol>
+<li>常见Tpye-C数据线 (传统PC) </li>
+<li>两头Type-C的数据线 (现代PC)</li>
+</ol>
+<p><strong>更多：</strong></p>
+<ul>
+<li><a href="/vim3/UpgradeViaUSBCable.html">通过USB升级固件</a></li>
+<li><a href="/vim3/HowtoBootIntoUpgradeMode.html">进入升级模式</a></li>
+</ul>
+<p><strong>固件</strong></p>
+<ul>
+<li><a href="/vim3/FirmwareAndroid.html">安卓固件</a></li>
+<li><a href="/vim3/FirmwareUbuntu.html">Ubuntu固件</a></li>
+<li><a href="/vim3/FirmwareLibreelec.html">LibreELEC</a></li>
+<li><a href="/vim3/FirmwareDualos.html">Dual</a></li>
+<li><a href="/vim3/FirmwareUboot.html">U-Boot</a></li>
+<li><a href="/vim3/FirmwareThirdparty.html">Third Party OSes</a></li>
+</ul>
+<h1 id="观看电影，扩展内部emmc存储"><a href="#观看电影，扩展内部emmc存储" class="headerlink" title="观看电影，扩展内部emmc存储"></a>观看电影，扩展内部emmc存储</h1><p>如果您希望将VIM3 SBC用作媒体中心，用于存储/下载大型电影文件，这些项目非常有用。一个microDXC的UHS-I卡很贵，但它的速度也足以支持4K视频播放。此外，您还可以连接外部USB-2.0/3.0 SSD或HDD以存储整个媒体库。</p>
+<ol>
+<li>不小于64GB的USB-2.0/3.0 HDD/SSD</li>
+<li>不小于64GB的<em>microSDXC UHS-I</em> SD-Card</li>
+</ol>
+<p><strong>更多:</strong></p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.amazon.com/Samsung-T5-Portable-SSD-MU-PA1T0B/dp/B073H552FJ/ref=sr_1_1_sspa?ie=UTF8&qid=1543995277&sr=8-1-spons&keywords=external+usb+ssd&psc=1">Amazon - Samsung T5 Portable SSD</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias=aps&field-keywords=microSDXC+UHS-I&rh=i:aps,k:microSDXC+UHS-I">Amzon - microSDXC UHS-I SD-Card</a></li>
+</ul>
+<p><strong>提示:</strong> 如今，大多数人都通过流媒体使用，可以参考<a href="/vim3/InstallLibreELEC.html">如何安装LibreELEC</a></p>
+<h1 id="软件开发-高级CRACH恢复"><a href="#软件开发-高级CRACH恢复" class="headerlink" title="软件开发/高级CRACH恢复"></a>软件开发/高级CRACH恢复</h1><p>在系统完全崩溃需要手动恢复的极端情况下，需要使用mregister重置VIM3 SBC。USB串行调试工具对于开发人员调试复杂软件问题也很有用。</p>
+<ol>
+<li>可导电的金属镊子（用于通过mregister重置死掉的sbc）</li>
+<li>USB串行调试工具（用于诊断软件/硬件问题）</li>
+</ol>
+<p><strong>更多:</strong></p>
+<ul>
+<li><a href="/vim3/HowtoBootIntoUpgradeMode.html">升级模式</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias=aps&field-keywords=metal+tweezers">亚马逊－金属镊子</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias=aps&field-keywords=usb+serial+debug+tool&rh=i:aps,k:usb+serial+debug+tool">亚马逊-USB调试工具</a></li>
+</ul>
+<h1 id="VIM3相关网页"><a href="#VIM3相关网页" class="headerlink" title="VIM3相关网页"></a>VIM3相关网页</h1><p>更多的相关信息，请查看我们的网页，阅读文档，或者到论坛浏览以及提问。</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://www.khadas.com/vim">VIM3网站首页</a></li>
+<li><a target="_blank" rel="noopener" href="https://forum.khadas.com/c/Khadas-VIM3">VIM3论坛页</a></li>
+</ul>
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/Blogs/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/Blogs/2021/09/11/KhadasVim3/vim3/hardwareVim3/" title="VIM3硬件资料文档" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToSetAutoLogin/" title="如何设置自动登录" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/13/WSL_X11/" title="">
+											
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 13日, 2021				
+							</p>
+							<p class="relate-post-content">
+								WSL_X11_RemoteLogin远程登录 WSL可视化界面操作
+1234567891011121314151617181920212223sudo apt-get update &amp;&amp; sudo apt-get u...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/13/WSL_X11/" title="">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">
+								安装Amlogic平台交叉编译器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								编译Amlogic平台需要安装交叉编译器，按如下步骤安装。
+安装U-Boot BL交叉编译器123456$ sudo apt-get install gcc-arm-none-eabi$ wget https://releases.l...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="安装Amlogic平台交叉编译器"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" title="Khadas VIM2/VIM3/Edge KBI说明">
+								Khadas VIM2/VIM3/Edge KBI说明			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								KBI是”Khadas Bootloader Instructions”的缩写，主要用于以下几方面：
+
+控制可编程MCU
+管理底层硬件
+让开发者体验VIM2/VIM3/Edge全部的特性
+
+这篇文档介绍了如何配置使用KBI。 因为KB...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" title="Khadas VIM2/VIM3/Edge KBI说明">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Khadas VIM2/VIM3/Edge KBI说明"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">
+								Krescue - 助你玩转khadas			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								什么是krescueKrescue是一个非常小(21mb)的操作系统，您可以直接从micro SD卡或EMMC启动。它是一把“瑞士军刀”，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是，通过转储一个原始压缩的.img.g...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Krescue - 助你玩转khadas"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/ListOfCompatibleNVMeSSDs/" title="List of compatible NVMe SSDs">
+								List of compatible NVMe SSDs			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								TODO
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/ListOfCompatibleNVMeSSDs/" title="List of compatible NVMe SSDs">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="List of compatible NVMe SSDs"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/LoadImagesWithUBootViaTFTP/" title="通过TFTP下载镜像">
+								通过TFTP下载镜像			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								在有线网络连接正常的情况下，U-boot能通过TFTP非常方便的下载更新镜像文件。
+准备
+ 搭建TFTP服务器
+
+更新U-boot12kvim# tftp 1080000 u-boot.binkvim# store rom_write...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/LoadImagesWithUBootViaTFTP/" title="通过TFTP下载镜像">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="通过TFTP下载镜像"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupSerialTool/" title="设置串口调试工具">
+								设置串口调试工具			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								准备工作
+ 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具
+
+如何连接请按下面方式连接：
+1) 连接所需的GPIO, 确保TX/RX连接正确
+* Tool Pin `GND`: &lt;---&gt; `Pin17...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupSerialTool/" title="设置串口调试工具">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="设置串口调试工具"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupTFTPServer/" title="搭建TFTP服务器">
+								搭建TFTP服务器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								很常用的搭建方法，你也可以通过Google搜索相关信息。
+这里我们提供一个参考。
+Ubuntu16.04设置TFTP安装TFTP相关软件包：
+1$ sudo apt-get install openbsd-inetd tftpd tf...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupTFTPServer/" title="搭建TFTP服务器">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="搭建TFTP服务器"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/UBootUsage/" title="U-boot使用说明">
+								U-boot使用说明			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								通过U盘烧录boot.img拷贝 boot.img 到U盘, 然后插入到VIM USB，执行如下命令
+1kvim# usb_update boot boot.img
+
+通过SD卡烧录boot.img拷贝 boot.img SD卡, 然...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/UBootUsage/" title="U-boot使用说明">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="U-boot使用说明"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/Blogs/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/Blogs/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/Blogs/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/Blogs/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/Blogs/plugin/search/ziploader.js"></script>
+<script src="/Blogs/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/Blogs/search.zip',
+		version_Path = '/Blogs/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/Blogs/plugin/chinese/chinese.js"></script>
+<script src="/Blogs/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/Blogs/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/Blogs/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/Blogs/plugin/resizediv/resizediv.js"></script>
+<script src="/Blogs/js/main.js"></script>
+
+	</body>	
+</html>

@@ -1,0 +1,782 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      NeverSurrender
+    
+  </title>
+  <meta name="author" content="Biao Wang">
+  <meta name="keywords" content="" />
+  <meta name="description" content="VincentW will not give up" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/Blogs/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/Blogs/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/Blogs/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/Blogs/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			主页
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/Blogs/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/Blogs/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			
+
+
+
+	<!--cart style-->
+	<div class="layout-cart">
+	<div id="layout-cart">
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToTrainInception/" title="  " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToTrainInception/" title="">							
+							
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							训练inception模型inception模型是一个用于监测物体的模型，同时只能监测一个物体。这里使用TensorFlow版本的inception模型....
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToTrainYolo/" title=" 使用darknet训练自己的yolo模型 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToTrainYolo/" title="使用darknet训练自己的yolo模型">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToTrainYolo/" itemprop="url">
+		使用darknet训练自己的yolo模型
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							准备搭建darknet开发环境darknet的搭建可以参考这个文档，安装需求搭建安装配置darknet环境darknet环境训练yolo模型的几点说明：
+...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToTransformYolo/" title=" yolov3模型转换 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToTransformYolo/" title="yolov3模型转换">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToTransformYolo/" itemprop="url">
+		yolov3模型转换
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							训练完成的模型是基于相应的框架运行的，尽管大部分框架都有c/c++接口，但是即使使用这些接口，仍然只能使用CPU或者GPU，想要使用NPU加速，就需要通过...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheKernel/" title=" 如何更新内核 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheKernel/" title="如何更新内核">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheKernel/" itemprop="url">
+		如何更新内核
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							我们使用Fenix来编译Ubuntu/Debian固件。你也可以使用它来编译内核debian包。
+
+设置Fenix环境
+
+1$ source env/se...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheLogo/" title=" 如何更新Logo " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheLogo/" title="如何更新Logo">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheLogo/" itemprop="url">
+		如何更新Logo
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							我们使用 Fenix来编译Ubuntu/Debian固件。默认logo文件为archives/logo/bmp/logo.bmp，所以你可以替换这个默认的...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheSystem/" title=" 如何将OTA升级到最新版本 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheSystem/" title="如何将OTA升级到最新版本">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheSystem/" itemprop="url">
+		如何将OTA升级到最新版本
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							更新资源1$ sudo apt-get update
+升级12$ sudo apt-get upgrade$ sudo do-fenix-full-upg...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheUboot/" title=" 如何更新u-boot " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheUboot/" title="如何更新u-boot">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUpgradeTheUboot/" itemprop="url">
+		如何更新u-boot
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							在kernel下升级我们使用Fenix来编译Ubuntu/Debian固件。你同样可以使用它来编译u-boot debian包。
+
+设置Fenix环境
+
+...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUse1wire/" title=" 如何使用单总线 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUse1wire/" title="如何使用单总线">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUse1wire/" itemprop="url">
+		如何使用单总线
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							以VIM1为例,VIM2请将dtb替换为kvim2_linux.dtb,VIM3请将dtb替换为kvim3_linux.dtb
+通过Overlays打开o...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUseADBTool/" title="  " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUseADBTool/" title="">							
+							
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							title: 如何使用ADB工具
+Install ADB这里将会介绍如何安装以及如何使用ADB工具
+如何安装ADB首先你要更新你的源，之后可以通过命令行直...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUseAmlNPUApp/" title=" aml_NPU_app仓库说明以及使用 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUseAmlNPUApp/" title="aml_NPU_app仓库说明以及使用">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUseAmlNPUApp/" itemprop="url">
+		aml_NPU_app仓库说明以及使用
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							aml_npu_app仓库是aml_npu_demo_binaries仓库的源码,可编译出aml_npu_demo_binaries仓库的库和demo.
+...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+	</div>
+	
+	
+	<div id="pagination">
+		
+			<a href="/Blogs/page/15/" data-title="加载更多" data-status="没有了">加载更多</a>
+		
+	</div>
+
+	
+
+</div>
+	
+
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/Blogs/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/Blogs/plugin/search/ziploader.js"></script>
+<script src="/Blogs/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/Blogs/search.zip',
+		version_Path = '/Blogs/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/Blogs/plugin/chinese/chinese.js"></script>
+<script src="/Blogs/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/Blogs/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/Blogs/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/Blogs/plugin/resizediv/resizediv.js"></script>
+<script src="/Blogs/js/main.js"></script>
+
+	</body>	
+</html>

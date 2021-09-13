@@ -1,0 +1,948 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+       | NeverSurrender
+    
+  </title>
+  <meta name="author" content="Biao Wang">
+  <meta name="keywords" content="" />
+  <meta name="description" content="VincentW will not give up" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/Blogs/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/Blogs/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/Blogs/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/Blogs/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/Blogs/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/Blogs/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/Blogs/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/Blogs/2021/09/11/Something/" itemprop="url">
+		<time datetime="2021-09-11T11:10:51.598Z" itemprop="dateUpdated">
+	  		2021-09-11
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h1 id="Something"><a href="#Something" class="headerlink" title="Something"></a>Something</h1><p>老的ubuntu 源</p>
+<pre><code>deb http://dk.archive.ubuntu.com/ubuntu/ xenial main
+deb http://dk.archive.ubuntu.com/ubuntu/ xenial universe
+</code></pre>
+<p>xenial 是16.04 版本</p>
+<table><thead><tr><th rowspan="2" style="width:103px;">版本</th><th rowspan="2" style="width:163px;">开发代号</th><th rowspan="2">中译</th><th rowspan="2">发布日期</th><th colspan="2">支持结束时间</th><th rowspan="2"><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Linux%E5%85%A7%E6%A0%B8">内核</a>版本</th></tr><tr><th>桌面版</th><th>服务器版</th></tr></thead><tbody><tr><td style="width:103px;">4.10</td><td style="width:163px;">Warty Warthog</td><td>多疣的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%96%A3%E8%B1%AC">疣猪</a></td><td>2004-10-20</td><td colspan="2">2006-04-30</td><td>2.6.8</td></tr><tr><td style="width:103px;">5.04</td><td style="width:163px;">Hoary Hedgehog</td><td>白发的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%88%BA%E7%8C%AC">刺猬</a></td><td>2005-04-08</td><td colspan="2">2006-10-31</td><td>2.6.10</td></tr><tr><td style="width:103px;">5.10</td><td style="width:163px;">Breezy Badger</td><td>活泼的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%8D%BE">獾</a></td><td>2005-10-13</td><td colspan="2">2007-04-13</td><td>2.6.12</td></tr><tr><td style="width:103px;">6.06 LTS</td><td style="width:163px;">Dapper Drake</td><td>整洁的公<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%B8%AD">鸭</a></td><td>2006-06-01</td><td>2009-07-14</td><td>2011-06-01</td><td>2.6.15</td></tr><tr><td style="width:103px;">6.10</td><td style="width:163px;">Edgy Eft</td><td>尖利的小<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%9C%A5%E8%9C%B4">蜥蜴</a></td><td>2006-10-26</td><td colspan="2">2008-04-25</td><td>2.6.17</td></tr><tr><td style="width:103px;">7.04</td><td style="width:163px;">Feisty Fawn</td><td>烦躁不安的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%B9%BF%E7%A7%91">鹿</a></td><td>2007-04-19</td><td colspan="2">2008-10-19</td><td>2.6.20</td></tr><tr><td style="width:103px;">7.10</td><td style="width:163px;">Gutsy Gibbon</td><td>胆大的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%95%BF%E8%87%82%E7%8C%BF">长臂猿</a></td><td>2007-10-18</td><td colspan="2">2009-04-18</td><td>2.6.22</td></tr><tr><td style="width:103px;">8.04 LTS</td><td style="width:163px;">Hardy Heron</td><td>坚强的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%B9%AD%E7%A7%91">鹭</a></td><td>2008-04-24</td><td>2011-05-12</td><td>2013-05-09</td><td>2.6.24</td></tr><tr><td style="width:103px;">8.10</td><td style="width:163px;">Intrepid Ibex</td><td>无畏的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BE%B1%E7%BE%8A">羱羊</a></td><td>2008-10-30</td><td colspan="2">2010-04-30</td><td>2.6.27</td></tr><tr><td style="width:103px;">9.04</td><td style="width:163px;">Jaunty Jackalope</td><td>活泼的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%B9%BF%E8%A7%92%E5%85%94">鹿角兔</a></td><td>2009-04-23</td><td colspan="2">2010-10-23</td><td>2.6.28</td></tr><tr><td style="width:103px;">9.10</td><td style="width:163px;">Karmic Koala</td><td>幸运的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%A0%91%E8%A2%8B%E7%86%8A">树袋熊</a></td><td>2009-10-29</td><td colspan="2">2011-04-30</td><td>2.6.31</td></tr><tr><td style="width:103px;">10.04 LTS</td><td style="width:163px;">Lucid Lynx</td><td>清醒的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%B1%B1%E8%B2%93">山猫</a></td><td>2010-04-29</td><td>2013-05-09</td><td>2015-04-30</td><td>2.6.32</td></tr><tr><td style="width:103px;">10.10</td><td style="width:163px;">Maverick Meerkat</td><td>标新立异的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%8B%90%E7%8D%B4">狐獴</a></td><td>2010-10-10</td><td colspan="2">2012-04-10</td><td>2.6.35</td></tr><tr><td style="width:103px;">11.04</td><td style="width:163px;">Natty Narwhal</td><td>敏捷的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%8B%AC%E8%A7%92%E9%B2%B8">独角鲸</a></td><td>2011-04-28</td><td colspan="2">2012-10-28</td><td>2.6.38</td></tr><tr><td style="width:103px;">11.10</td><td style="width:163px;">Oneiric Ocelot</td><td>有梦的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%99%8E%E7%8C%AB">虎猫</a></td><td>2011-10-13</td><td colspan="2">2013-05-09</td><td>3.0</td></tr><tr><td style="width:103px;">12.04 LTS</td><td style="width:163px;">Precise Pangolin</td><td>精准的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%A9%BF%E5%B1%B1%E7%94%B2">穿山甲</a></td><td>2012-04-26<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-39">[39]</a></td><td colspan="2">2017-04-28<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-40">[40]</a></td><td>3.2<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-41">[41]</a></td></tr><tr><td style="width:103px;">12.10</td><td style="width:163px;">Quantal Quetzal</td><td>量子的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%A0%BC%E6%9F%A5%E5%B0%94%E9%B8%9F">格查尔鸟</a></td><td>2012-10-18</td><td colspan="2">2014-05-16<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-42">[42]</a></td><td>3.5<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-43">[43]</a></td></tr><tr><td style="width:103px;">13.04</td><td style="width:163px;">Raring Ringtail</td><td>铆足了劲的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/w/index.php?title&#61;%E7%92%B0%E5%B0%BE%E8%B2%93%E7%86%8A&amp;action&#61;edit&amp;redlink&#61;1">环尾猫熊</a></td><td>2013-04-25</td><td colspan="2">2014-01-27<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-fridge032013-44">[44]</a></td><td>3.8<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-45">[45]</a></td></tr><tr><td style="width:103px;">13.10</td><td style="width:163px;">Saucy Salamander</td><td>活泼的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%A0%91%E8%9E%88">蝾螈</a></td><td>2013-10-17<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-SaucyRelease-46">[46]</a></td><td colspan="2">2014-07-17<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-saucyenddate-47">[47]</a></td><td>3.11</td></tr><tr><td style="width:103px;">14.04 LTS</td><td style="width:163px;">Trusty Tahr</td><td>可靠的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A1%94%E7%88%BE%E7%BE%8A">塔尔羊</a></td><td>2014-04-17<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-ubuntuwikiTrustyTahrRelease-48">[48]</a></td><td colspan="2">2019-04</td><td>3.13</td></tr><tr><td style="width:103px;">14.10</td><td style="width:163px;">Utopic Unicorn</td><td>乌托邦的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%8D%A8%E8%A7%92%E7%8D%B8">独角兽</a></td><td>2014-10-23<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-UtopicRelease-49">[49]</a></td><td colspan="2">2015-07-23<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-50">[50]</a></td><td>3.16<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-51">[51]</a></td></tr><tr><td style="width:103px;">15.04</td><td style="width:163px;">Vivid Vervet</td><td>活泼的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/w/index.php?title&#61;%E9%95%B7%E5%B0%BE%E9%BB%91%E9%A1%8E%E7%8C%B4&amp;action&#61;edit&amp;redlink&#61;1">长尾黑颚猴</a></td><td>2015-04-23<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-Sneddon18Nov14-52">[52]</a></td><td colspan="2">2016-02-04<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-53">[53]</a></td><td>3.19<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-Stahie08Apr15-54">[54]</a></td></tr><tr><td style="width:103px;">15.10</td><td style="width:163px;">Wily Werewolf</td><td>老谋深算的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%8B%BC%E4%BA%BA">狼人</a></td><td>2015-10-22<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-ubuntu.com-55">[55]</a></td><td colspan="2">2016-07-28<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-56">[56]</a></td><td>4.2<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-57">[57]</a></td></tr><tr><td style="width:103px;">16.04 LTS</td><td style="width:163px;">Xenial Xerus</td><td>好客的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%9D%9E%E6%B4%B2%E5%9C%B0%E6%9D%BE%E9%BC%A0">非洲地松鼠</a></td><td>2016-04-21<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-ubuntu_insights_2016_04_21-58">[58]</a></td><td colspan="2">2021-04</td><td>4.4<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-59">[59]</a></td></tr><tr><td style="width:103px;">16.10</td><td style="width:163px;">Yakkety Yak</td><td>喋喋不休的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%B0%82%E7%89%9B">牦牛</a></td><td>2016-10-13<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-yakkety_release_schedule-60">[60]</a></td><td colspan="2">2017-07-20</td><td>4.8</td></tr><tr><td style="width:103px;">17.04</td><td style="width:163px;">Zesty Zapus</td><td>热情的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%BE%8E%E6%B4%B2%E6%9E%97%E8%B7%B3%E9%BC%A0">美洲林跳鼠</a></td><td>2017-04-13<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-ZestyRelease-61">[61]</a></td><td colspan="2">2018-01-13</td><td>4.10<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-62">[62]</a></td></tr><tr><td style="width:103px;">17.10</td><td style="width:163px;">Artful Aardvark</td><td>巧妙的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%9C%9F%E8%B1%9A">土豚</a></td><td>2017-10-19<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-63">[63]</a></td><td colspan="2">2018-07-19</td><td>4.13<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-64">[64]</a></td></tr><tr><td style="width:103px;">18.04 LTS</td><td style="width:163px;">Bionic Beaver<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-65">[65]</a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-66">[66]</a></td><td>仿生的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%B5%B7%E7%8B%B8">海狸</a></td><td>2018-04-26<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-67">[67]</a></td><td colspan="2">2028-04<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-68">[68]</a></td><td>4.15</td></tr><tr><td style="width:103px;">18.10</td><td style="width:163px;">Cosmic Cuttlefish</td><td>宇宙的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%A2%A8%E9%B1%BC%E7%9B%AE">墨鱼</a></td><td>2018-10-18<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-69">[69]</a></td><td colspan="2"><strong>2019-07</strong></td><td>4.18<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-70">[70]</a></td></tr><tr><td style="width:103px;">19.04</td><td style="width:163px;">Disco Dingo</td><td>迪斯可的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E6%BE%B3%E6%B4%B2%E9%87%8E%E7%8A%AC">澳洲野犬</a></td><td>2019-04-18<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-71">[71]</a></td><td colspan="2">2020-01</td><td>TBA</td></tr><tr><td colspan="99"> <p>长期支持版本&#xff08;LTS&#xff09;。</p> <p> </p> <p>Ubuntu版本的命名规则是根据正式版发行的年月命名&#xff0c;Ubuntu 8.10也就意味着2008年10月发行的Ubuntu。</p> <p> </p> <p>Ubuntu是基于<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Debian">Debian</a>开发的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Linux%E7%99%BC%E8%A1%8C%E7%89%88">Linux发行版</a>&#xff0c;Debian的开发代号来自于电影<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E7%8E%A9%E5%85%B7%E7%B8%BD%E5%8B%95%E5%93%A1">玩具总动员</a>。</p> <p> </p> <p>Ubuntu各版本的代号却固定是形容词加上动物名称&#xff0c;而且这2个词的英文首字母一定是相同的。从Ubuntu 6.06开始&#xff0c;两个词的首字母按照英文字母表的排列顺序取用。</p> <p> </p> <p>ubuntu一词&#xff08;译为<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E4%B9%8C%E7%8F%AD%E5%9B%BE">乌班图</a>&#xff09;&#xff0c;意思是人性、我的存在是因为大家的存在。</p> <p> </p> <p>Ubuntu的开发由英国Canonical有限公司主导。</p> <p> </p> <p>Ubuntu是基于<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Debian">Debian</a>发行版和<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/GNOME">GNOME</a>桌面环境&#xff08;同时&#xff0c;也提供基于KDE、XFCE等桌面环境的派生版本&#xff09;。</p> <p> </p> <p>普通的桌面版可以获得发布后18个月内的支持&#xff0c;标为LTS&#xff08;长期支持&#xff09;的桌面版可以获得更长时间的支持。</p> <p> </p> <p>自Ubuntu 12.04 LTS开始&#xff0c;桌面版和服务器版均可获得为期5年的技术支持。</p> <p> </p> <p>Ubuntu建基于Debian的不稳定分支&#xff1a;不论其软件格式&#xff08;<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Deb">deb</a>&#xff09;还是软件管理与安装系统&#xff08;<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%AB%98%E7%B4%9A%E5%8C%85%E8%A3%9D%E5%B7%A5%E5%85%B7">Debian Apt</a>&#xff09;。</p> <p> </p> <p>Debian与Ubuntu的软件并不一定完全兼容&#xff0c;但大多数情况是通用的。</p> <p> </p> <p>Ubuntu所有系统相关的任务均需使用<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Sudo">Sudo</a>指令是它的一大特色。</p> <p> </p> <p>在发布5.04版时&#xff0c;Ubuntu就已经把<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Unicode">万国码</a>&#xff08;UTF-8 Unicode&#xff09;作为系统默认编码&#xff0c;用以应对各国各地区不同的语言文字。</p> <p> </p> <p>Ubuntu的包管理系统与Debian的类似&#xff0c;所有软件分为main、restricted、universe和multiverse等4类&#xff0c;每一类为一个组件&#xff08;component&#xff09;&#xff0c;代表着不同的使用许可和可用的支持级别。一般来说&#xff0c;官方支持的main组件主要用来满足大多数个人计算机用户的基本要求&#xff0c;restricted&#xff08;版权限制&#xff09;组件主要用来提高系统的可用性&#xff0c;因此通常需要安装这两类组件中的软件。</p> <p> </p> <p><em>main </em>即基本组件&#xff0c;其中只包含匹配Ubuntu的许可证要求并可以从Ubuntu团队中获得支持的软件&#xff0c;致力于满足日常使用&#xff0c;位于这个组件中的软件可以确保得到技术支持和及时的安全更新。此组件内的软件是必须匹配Ubuntu版权要求&#xff08;Ubuntu license requirements&#xff09;<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/Ubuntu#cite_note-34">[34]</a>的自由软件&#xff0c;而Ubuntu版权要求大致上与<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/w/index.php?title&#61;Debian%E8%87%AA%E7%94%B1%E8%BB%9F%E9%AB%94%E6%8C%87%E5%B0%8E%E7%B6%B1%E8%A6%81&amp;action&#61;edit&amp;redlink&#61;1">Debian自由软件指导纲要</a>&#xff08;Debian Free Software Guidelines&#xff09;相同。</p> <p> </p> <p><em>restricted </em>即受限组件&#xff0c;其中包含了非常重要的&#xff0c;但并不具有合适的自由许可证的软件&#xff0c;例如只能以二进制形式获得的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%A1%AF%E7%A4%BA%E5%8D%A1">显卡</a><a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%A9%85%E5%8B%95%E7%A8%8B%E5%BC%8F">驱动程序</a>。</p> <p>由于Ubuntu开发者无法获得相应的<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%8E%9F%E5%A7%8B%E7%A2%BC">源代码</a>&#xff0c;restricted组件能够获得的支持与main组件相比是非常有限的。</p> <p> </p> <p><em>universe </em>即社群维护组件&#xff0c;其中包含的软件种类繁多&#xff0c;均为<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E8%87%AA%E7%94%B1%E8%BD%AF%E4%BB%B6">自由软件</a>&#xff0c;但都不为Ubuntu团队所支持。</p> <p> </p> <p><em>multiverse </em>即非自由组件&#xff0c;其中包括了不匹配自由软件要求而且不被Ubuntu团队支持的软件包&#xff0c;通常为商业公司编写的软件。</p> <p> </p> <p> </p> </td></tr></tbody></table>
+
+<h2 id="wget-mwget-axel"><a href="#wget-mwget-axel" class="headerlink" title="wget mwget axel"></a>wget mwget axel</h2><p>下载工具</p>
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/Blogs/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/Blogs/2021/09/11/Signal/" title="" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/Blogs/2021/09/11/SuspendResume/" title="" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">
+								安装Amlogic平台交叉编译器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								编译Amlogic平台需要安装交叉编译器，按如下步骤安装。
+安装U-Boot BL交叉编译器123456$ sudo apt-get install gcc-arm-none-eabi$ wget https://releases.l...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="安装Amlogic平台交叉编译器"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" title="Khadas VIM2/VIM3/Edge KBI说明">
+								Khadas VIM2/VIM3/Edge KBI说明			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								KBI是”Khadas Bootloader Instructions”的缩写，主要用于以下几方面：
+
+控制可编程MCU
+管理底层硬件
+让开发者体验VIM2/VIM3/Edge全部的特性
+
+这篇文档介绍了如何配置使用KBI。 因为KB...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" title="Khadas VIM2/VIM3/Edge KBI说明">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Khadas VIM2/VIM3/Edge KBI说明"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">
+								Krescue - 助你玩转khadas			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								什么是krescueKrescue是一个非常小(21mb)的操作系统，您可以直接从micro SD卡或EMMC启动。它是一把“瑞士军刀”，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是，通过转储一个原始压缩的.img.g...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Krescue - 助你玩转khadas"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/ListOfCompatibleNVMeSSDs/" title="List of compatible NVMe SSDs">
+								List of compatible NVMe SSDs			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								TODO
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/ListOfCompatibleNVMeSSDs/" title="List of compatible NVMe SSDs">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="List of compatible NVMe SSDs"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/LoadImagesWithUBootViaTFTP/" title="通过TFTP下载镜像">
+								通过TFTP下载镜像			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								在有线网络连接正常的情况下，U-boot能通过TFTP非常方便的下载更新镜像文件。
+准备
+ 搭建TFTP服务器
+
+更新U-boot12kvim# tftp 1080000 u-boot.binkvim# store rom_write...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/LoadImagesWithUBootViaTFTP/" title="通过TFTP下载镜像">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="通过TFTP下载镜像"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupSerialTool/" title="设置串口调试工具">
+								设置串口调试工具			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								准备工作
+ 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具
+
+如何连接请按下面方式连接：
+1) 连接所需的GPIO, 确保TX/RX连接正确
+* Tool Pin `GND`: &lt;---&gt; `Pin17...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupSerialTool/" title="设置串口调试工具">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="设置串口调试工具"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupTFTPServer/" title="搭建TFTP服务器">
+								搭建TFTP服务器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								很常用的搭建方法，你也可以通过Google搜索相关信息。
+这里我们提供一个参考。
+Ubuntu16.04设置TFTP安装TFTP相关软件包：
+1$ sudo apt-get install openbsd-inetd tftpd tf...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupTFTPServer/" title="搭建TFTP服务器">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="搭建TFTP服务器"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/UBootUsage/" title="U-boot使用说明">
+								U-boot使用说明			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								通过U盘烧录boot.img拷贝 boot.img 到U盘, 然后插入到VIM USB，执行如下命令
+1kvim# usb_update boot boot.img
+
+通过SD卡烧录boot.img拷贝 boot.img SD卡, 然...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/UBootUsage/" title="U-boot使用说明">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="U-boot使用说明"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/UpgradeViaTFBurningCard/" title="通过TF卡升级固件">
+								通过TF卡升级固件			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								这里以安卓为例，Ubuntu的升级与安卓一致。
+注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。
+准备工作
+下载Burn Card Maker Tool 并解压。
+准备好TF卡的读卡器。...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/UpgradeViaTFBurningCard/" title="通过TF卡升级固件">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="通过TF卡升级固件"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/Blogs/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/Blogs/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/Blogs/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/Blogs/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/Blogs/plugin/search/ziploader.js"></script>
+<script src="/Blogs/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/Blogs/search.zip',
+		version_Path = '/Blogs/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/Blogs/plugin/chinese/chinese.js"></script>
+<script src="/Blogs/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/Blogs/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/Blogs/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/Blogs/plugin/resizediv/resizediv.js"></script>
+<script src="/Blogs/js/main.js"></script>
+
+	</body>	
+</html>

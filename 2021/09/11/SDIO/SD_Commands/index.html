@@ -1,0 +1,996 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+       | NeverSurrender
+    
+  </title>
+  <meta name="author" content="Biao Wang">
+  <meta name="keywords" content="" />
+  <meta name="description" content="VincentW will not give up" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/Blogs/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/Blogs/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/Blogs/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/Blogs/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/Blogs/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/Blogs/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/Blogs/2021/09/11/SDIO/SD_Commands/" itemprop="url">
+		<time datetime="2021-09-11T11:06:08.552Z" itemprop="dateUpdated">
+	  		2021-09-11
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<p>Command 模式的命令说明:</p>
+<pre><code>CMD0 GO_IDLE_STATE  Mandatory Mandatory  Used to change from SD to SPI mode /* 使SD卡进入Idle状态 */
+CMD2 ALL_SEND_CID Mandatory  CID not supported by SDIO /* 广播获取卡的CID信息 */
+CMD3 SEND_RELATIVE_ADDR  Mandatory Mandatory  /* 广播获取SD卡所分配的相对地址 */
+CMD4 SET_DSR  Optional    DSR not supported by SDIO 
+CMD5 IO_SEND_OP_COND    Mandatory  
+CMD6 SWITCH_FUNC  Mandatory1 Mandatory1 Added in Part 1 v1.10 
+CMD7 SELECT/DESELECT_CARD Mandatory Mandatory  /* 根据获取指定的RCA,选中SD卡,如果在选中一个卡的状态下,又选中其他的卡,那么之前的卡会自动取消选中,如果发送地址0,则表示取消选中全部卡 */
+CMD9 SEND_CSD  Mandatory    CSD not supported by SDIO /* 获取SD相关的存储信息,如块大小,容量等. */
+CMD10 SEND_CID  Mandatory   CID not supported by SDIO 
+CMD12 STOP_TRANSMISSION  Mandatory /* 停止多块传输操作 */
+CMD13 SEND_STATUS  Mandatory    Card Status includes only SDMEM information /* 获取卡的状态 */
+CMD15 GO_INACTIVE_STATE  Mandatory Mandatory  
+CMD16 SET_BLOCKLEN  Mandatory /* 设置SD卡的块大小,CSD寄存器有描述. */
+CMD17 READ_SINGLE_BLOCK  Mandatory /* 使SD卡进入传输状态,读取单个块 */
+CMD18 READ_MULTIPLE_BLOCK Mandatory /* 使SD卡进入传输状态,读取多个块,直到收到CMD12为止 */
+CMD24 WRITE_BLOCK   Mandatory /* 使SD卡进入传输状态,写入单个块 */   
+CMD25 WRITE_MULTIPLE_BLOCK Mandatory /* 使SD卡进入传输状态,写入多个块 */    
+CMD27 PROGRAM_CSD  Mandatory    CSD not supported by SDIO 
+CMD28 SET_WRITE_PROT  Optional   
+CMD29 CLR_WRITE_PROT  Optional    
+CMD30 SEND_WRITE_PROT  Optional    
+CMD32 ERASE_WR_BLK_START  Mandatory    
+CMD33 ERASE_WR_BLK_END  Mandatory    
+CMD38 ERASE  Mandatory    
+CMD42 LOCK_UNLOCK  Optional    
+CMD52 IO_RW_DIRECT    Mandatory  
+CMD53 IO_RW_EXTENDED    Mandatory  Block mode is optional 
+CMD55 APP_CMD Mandatory /* 特殊指令前命令,在发送ACMD类指令前,需要发送此命令 */  
+CMD56 GEN_CMD  Mandatory    
+ACMD6 SET_BUS_WIDTH  Mandatory /* 设置SD卡的总线位宽,这个需要读取SCR确定 */ 
+ACMD13 SD_STATUS  Mandatory    
+ACMD22 SEND_NUM_WR_BLOCKS  Mandatory    
+ACMD23 SET_WR_BLK_ERASE_COUNT Mandatory     
+ACMD41 SD_APP_OP_COND  Mandatory /* 获取SD电压值 */
+ACMD42 SET_CLR_CARD_DETECT  Mandatory    
+ACMD51 SEND_SCR  Mandatory    SCR not supported by SDIO /* 获取SD卡的SCR寄存器的值 */
+</code></pre>
+<p>2410 SDI控制寄存器:</p>
+<pre><code>SDICON 0x5A000000    R/W SDI control register             /* 完成SD卡基础配置,包括大小端,中断允许,时钟使能和重启FIFO */
+SDIPRE 0x5A000004    R/W SDI baud rate prescaler register /* 对SD的时钟分频系数设置 */
+SDICARG 0x5A000008   R/W SDI command argument register    /* 指令的参数存放在这里,不同的命令,参数的位数格式有不用含义 */
+SDICCON 0x5A00000C   R/W SDI command control register     /* 控制指令形式的寄存器,配置SPI还是SDI指令,指令的反馈长度,是否等待反馈,是否运行指令,指令的索引等 */
+SDICSTA 0x5A000010   R/(W) SDI command status register    /* 指令状态寄存器,指令是否超时,传送,结束,CRC是否正确等 */
+SDIRSP0 0x5A000014   R SDI response register 0            /* SD回应状态寄存器,R1的回应都用这个,其他长回应会用到4个. */
+SDIRSP1 0x5A000018   R SDI response register 1
+SDIRSP2 0x5A00001C   R SDI response register 2
+SDIRSP3 0x5A000020   R SDI response register 3
+SDIDTIMER 0x5A000024 R/W SDI data / busy timer register   /* 设置超时时间 */
+SDIBSIZE 0x5A000028  R/W SDI block size register          /* 设置Block的大小,FIFO共填充的数据.单位是字节 */
+SDIDCON 0x5A00002C   R/W SDI data control register        /* 数据控制寄存器,配置是几线传输,数据发送方向,数据传送方式,要传送多少个块的数据等 */
+SDIDCNT 0x5A000030   R SDI data remain counter register   /* 数据保持计数器 */
+SDIDSTA 0x5A000034   R/(W) SDI data status register       /* 数据状态寄存器,数据是否发送完,CRC效验,超时等 */
+SDIFSTA 0x5A000038   R SDI FIFO status register           /* FIFO状态寄存器，DMA传输时不用判断FIFO */
+SDIDAT 0x5A00003C    (Li/W,Li/B, Bi/W) 0x5A00003F(Bi/B) R/W SDI data register /* 数据传输寄存器,要严格读完所请求的数据块,否则遗留的数据位将影响下一次的数据传输 */
+SDIIMSK 0x5A000040   R/W SDI interrupt mask register      /* 中断屏蔽 */
+</code></pre>
+<p>SD/MMC 初始化流程</p>
+<p>步骤是：<br>    1）配置时钟，慢速一般为400K，设置工作模式<br>    2）发送CMD0，进入空闲态，该指令没有反馈<br>    3）发送CMD8，如果有反应，CRC值与发送的值相同，说明该卡兼容SD2.0协议。<br>    4）发送CMD55+ACMD41，判断SD卡的上电是否正确，短反馈成功说明该卡为SD卡(短反馈第31位置1为HC卡)，否则发送CMD0，有反应说明是MMC卡<br>    5）发送CMD2，验证SD卡是否接入，长反馈(CID)<br>    6）发送CMD3，读取SD卡的RCA（地址），短反馈<br>    7）发送CMD9，读取CSD寄存器获取卡的相关信息<br>    8）发送CMD7，使能SD卡<br>    9）配置高速时钟，准备数据传输，一般20M～25M<br>    10）发送CMD55+ACMD51读取SCR寄存器，SD卡可以通过该值获得位宽，如果是MMC卡则需要使用主线测试来确定卡的位宽。<br>    11）SD卡发送CMD55+ACMD6配置为4bit数据传输模式(根据SCR读出来的值确定),MMC卡发送CMD6来设置位宽<br>    12）发送CMD7，使能SD卡，使其进入传输状态)，接着发送CMD16设置块大小(根据前面读取的CSD信息确定)。<br>    13) 把命令参数设置为0，再次发送CMD7，取消选中所有卡。</p>
+<p>SD 读操作(注意:标准卡和HC卡最大区别在于单块或者多块读写时命令的起始地址参数对齐,标准卡是以字节计算为起始地址的,而HC则按块地址作为起始地址.例如,一般情况下从CSD获取的卡信息中,块长度都为512字节大小,那么要访问第一个512字节时,对于标准卡,命令的参数直接写512,而HC卡则写1.另外,标准卡所使用的SD协议有可能是1.0也有可能是2.0,但是HC的卡就一定是2.0的,大部分的SD卡都是2.0的,而最新的XC卡则使用3.0的协议.)<br>步骤是：<br>    1）发送CMD7，以卡的相对地址为参数，选中该卡，并使其进入Tran状态<br>    2）发送CMD17/CMD18，命令的参数需要根据初始化时所判断的卡类型填写，按字节或按块.<br>    3）循环读取数据<br>    4）发送CMD12，强制停止所有传输.<br>    5）发送CMD7，以0作为命令参数,取消所有选中.</p>
+<p>SD 卡寄存器</p>
+<pre><code>SCR 该寄存器保存的SD的特殊性信息(例如支持的总线位宽,SD卡的版本),MMC卡没有此寄存器,获取该寄存器的数据需要从数据线读的.
+CSD 该寄存器保存着SD卡的详细信息,如块大小,SD卡的容量大小,文件系统等信息.
+RCA SD的相对地址(SD卡已经保存在芯片内部)
+OCR 该寄存器保存着SD的可供电范围,并且区别是否为HC卡(根据返回的ORC回应第30位是否置1).
+CIA (Card I/O Area)
+CID SD卡的唯一ID号
+CIS (Card Information Structure)跟Linux内核的参数TagList的存放方式很相似,都是以标识号和长度加后续内容表示一个节点.
+</code></pre>
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/Blogs/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/Blogs/2021/09/11/SDIO/SDIO/" title="" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/Blogs/2021/09/11/running/RunningLinuxKernel/" title="" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">
+								安装Amlogic平台交叉编译器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								编译Amlogic平台需要安装交叉编译器，按如下步骤安装。
+安装U-Boot BL交叉编译器123456$ sudo apt-get install gcc-arm-none-eabi$ wget https://releases.l...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="安装Amlogic平台交叉编译器"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" title="Khadas VIM2/VIM3/Edge KBI说明">
+								Khadas VIM2/VIM3/Edge KBI说明			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								KBI是”Khadas Bootloader Instructions”的缩写，主要用于以下几方面：
+
+控制可编程MCU
+管理底层硬件
+让开发者体验VIM2/VIM3/Edge全部的特性
+
+这篇文档介绍了如何配置使用KBI。 因为KB...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" title="Khadas VIM2/VIM3/Edge KBI说明">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Khadas VIM2/VIM3/Edge KBI说明"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">
+								Krescue - 助你玩转khadas			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								什么是krescueKrescue是一个非常小(21mb)的操作系统，您可以直接从micro SD卡或EMMC启动。它是一把“瑞士军刀”，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是，通过转储一个原始压缩的.img.g...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Krescue - 助你玩转khadas"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/ListOfCompatibleNVMeSSDs/" title="List of compatible NVMe SSDs">
+								List of compatible NVMe SSDs			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								TODO
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/ListOfCompatibleNVMeSSDs/" title="List of compatible NVMe SSDs">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="List of compatible NVMe SSDs"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/LoadImagesWithUBootViaTFTP/" title="通过TFTP下载镜像">
+								通过TFTP下载镜像			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								在有线网络连接正常的情况下，U-boot能通过TFTP非常方便的下载更新镜像文件。
+准备
+ 搭建TFTP服务器
+
+更新U-boot12kvim# tftp 1080000 u-boot.binkvim# store rom_write...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/LoadImagesWithUBootViaTFTP/" title="通过TFTP下载镜像">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="通过TFTP下载镜像"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupSerialTool/" title="设置串口调试工具">
+								设置串口调试工具			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								准备工作
+ 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具
+
+如何连接请按下面方式连接：
+1) 连接所需的GPIO, 确保TX/RX连接正确
+* Tool Pin `GND`: &lt;---&gt; `Pin17...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupSerialTool/" title="设置串口调试工具">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="设置串口调试工具"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupTFTPServer/" title="搭建TFTP服务器">
+								搭建TFTP服务器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								很常用的搭建方法，你也可以通过Google搜索相关信息。
+这里我们提供一个参考。
+Ubuntu16.04设置TFTP安装TFTP相关软件包：
+1$ sudo apt-get install openbsd-inetd tftpd tf...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupTFTPServer/" title="搭建TFTP服务器">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="搭建TFTP服务器"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/UBootUsage/" title="U-boot使用说明">
+								U-boot使用说明			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								通过U盘烧录boot.img拷贝 boot.img 到U盘, 然后插入到VIM USB，执行如下命令
+1kvim# usb_update boot boot.img
+
+通过SD卡烧录boot.img拷贝 boot.img SD卡, 然...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/UBootUsage/" title="U-boot使用说明">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="U-boot使用说明"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/UpgradeViaTFBurningCard/" title="通过TF卡升级固件">
+								通过TF卡升级固件			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								这里以安卓为例，Ubuntu的升级与安卓一致。
+注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。
+准备工作
+下载Burn Card Maker Tool 并解压。
+准备好TF卡的读卡器。...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/UpgradeViaTFBurningCard/" title="通过TF卡升级固件">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="通过TF卡升级固件"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/Blogs/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/Blogs/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/Blogs/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/Blogs/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/Blogs/plugin/search/ziploader.js"></script>
+<script src="/Blogs/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/Blogs/search.zip',
+		version_Path = '/Blogs/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/Blogs/plugin/chinese/chinese.js"></script>
+<script src="/Blogs/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/Blogs/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/Blogs/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/Blogs/plugin/resizediv/resizediv.js"></script>
+<script src="/Blogs/js/main.js"></script>
+
+	</body>	
+</html>

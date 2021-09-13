@@ -1,0 +1,1019 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      OPENWRT编译之树莓派4B | NeverSurrender
+    
+  </title>
+  <meta name="author" content="Biao Wang">
+  <meta name="keywords" content="" />
+  <meta name="description" content="VincentW will not give up" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/Blogs/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/Blogs/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/Blogs/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/Blogs/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「OPENWRT编译之树莓派4B」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/Blogs/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/Blogs/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/Blogs/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+	<a href="/Blogs/2019/11/24/OPENWRT%E7%BC%96%E8%AF%91%E4%B9%8B%E6%A0%91%E8%8E%93%E6%B4%BE4B/" itemprop="url">
+		OPENWRT编译之树莓派4B
+	</a>
+
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/Blogs/2019/11/24/OPENWRT%E7%BC%96%E8%AF%91%E4%B9%8B%E6%A0%91%E8%8E%93%E6%B4%BE4B/" itemprop="url">
+		<time datetime="2019-11-23T21:00:00.000Z" itemprop="dateUpdated">
+	  		2021-09-11
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+				
+	<i class="icon-price-tags"></i>
+	
+		<a href="/Blogs/tags/rpi/" class=" ">
+			rpi
+		</a>
+	
+		
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h1 id="环境配置说明"><a href="#环境配置说明" class="headerlink" title="环境配置说明"></a>环境配置说明</h1><ul>
+<li>适用硬件：Raspberry Pi 4B</li>
+<li>编译系统：Debian For WSL</li>
+<li>参考借鉴：<a target="_blank" rel="noopener" href="https://mlapp.cn/374.html">参数配置</a> | <a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-344825-1-1.html">LuCI配置</a> | <a target="_blank" rel="noopener" href="https://www.right.com.cn/forum/thread-406062-1-1.html">网卡设置</a></li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 安装编译工具</span></span><br><span class="line">sudo apt-get update</span><br><span class="line">sudo apt-get install build-essential asciidoc binutils bzip2 \</span><br><span class="line">gawk gettext git libncurses5-dev libz-dev patch unzip zlib1g-dev \</span><br><span class="line">lib32gcc1 libc6-dev-i386 subversion flex uglifyjs libssl-dev upx \</span><br><span class="line">gcc-multilib p7zip p7zip-full msmtp texinfo libglib2.0-dev xmlto \</span><br><span class="line">git-core qemu-utils libelf-dev autoconf automake libtool autopoint \</span><br><span class="line">curl wget device-tree-compiler rsync</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<h1 id="获取编译源码"><a href="#获取编译源码" class="headerlink" title="获取编译源码"></a>获取编译源码</h1><blockquote>
+<ol>
+<li>注意：不要使用root用户编译，最好使用梯子来加速源码的下载速度</li>
+<li>编译完成后把bin/targets/brcm27xx/bcm2711/openwrt-bcm27xx-bcm2711-rpi-4-ext4-factory.img.gz解压后的img文件刷入SD卡中即可</li>
+<li>可选lean版魔改源码替换官方源码：<a target="_blank" rel="noopener" href="https://github.com/coolsnowwolf/lede">https://github.com/coolsnowwolf/lede</a></li>
+</ol>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 设置代理来加速源码下载，没有代理可跳过或根据需求设置</span></span><br><span class="line"><span class="comment"># export all_proxy=&quot;127.0.0.1:7890&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 获取openwrt官方源码</span></span><br><span class="line">mkdir openwrt</span><br><span class="line"><span class="built_in">cd</span> openwrt/</span><br><span class="line">git <span class="built_in">clone</span> https://git.openwrt.org/openwrt/openwrt.git ./</span><br><span class="line"></span><br><span class="line"><span class="comment"># 以后每次编译前建议执行以下三行命令更新源码</span></span><br><span class="line">git pull</span><br><span class="line">./scripts/feeds update -a</span><br><span class="line">./scripts/feeds install -a</span><br><span class="line"></span><br><span class="line">make defconfig		<span class="comment"># 测试编译环境</span></span><br><span class="line">make menuconfig		<span class="comment"># 进入固件配置界面</span></span><br><span class="line">make download -j8 V=s	<span class="comment"># 下载所需源码，请尽量使用梯子</span></span><br><span class="line">make -j1 V=s		<span class="comment"># 首次编译推荐用单线程</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 再次编译前建议使用make clean清理</span></span><br><span class="line">make clean	<span class="comment"># 清除bin目录</span></span><br><span class="line">make dirclean	<span class="comment"># 清除bin目录和交叉编译工具及工具链目录</span></span><br><span class="line">make distclean	<span class="comment"># 清除所有相关的东西，包括下载的软件包，配置文件，feed内容等</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="可选内核配置"><a href="#可选内核配置" class="headerlink" title="可选内核配置"></a>可选内核配置</h1><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 额外配置内核参数，一般不需要配置</span></span><br><span class="line"><span class="comment"># 只能包含到内核而不能作为模块，因为编译后的模块不会添加到固件内</span></span><br><span class="line">make kernel_menuconfig	<span class="comment"># 进入内核配置界面</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 修改的内核参数会保存到openwrt/target/linux/bcm27xx/bcm2711/config-5.4</span></span><br><span class="line"><span class="comment"># 和openwrt/target/linux/generic/config-5.4合成最终内核配置文件</span></span><br><span class="line"><span class="comment"># openwrt/build_dir/target-aarch64_cortex-a72_musllinux-bcm27xx_bcm2711/linux-5.4.42/.config</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="固件编译配置"><a href="#固件编译配置" class="headerlink" title="固件编译配置"></a>固件编译配置</h1><ol>
+<li><p>简单的make menuconfig参数配置，除必选配置外的其他项可根据需求自行选择</p>
+</li>
+<li><p>基础配置</p>
+</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 必选配置</span></span><br><span class="line">Target System -&gt; Broadcom BCM27xx</span><br><span class="line">Subtarget -&gt; BCM2711 boards (64 bit)</span><br><span class="line">Target Profile -&gt; Raspberry Pi 4B</span><br><span class="line"></span><br><span class="line"><span class="comment"># 镜像参数</span></span><br><span class="line">Target Images -&gt; ext4		<span class="comment"># ext4格式的固件可方便地调整分区大小</span></span><br><span class="line">Target Images -&gt; squashfs	<span class="comment"># squashfs格式的固件可恢复出厂设置</span></span><br><span class="line">Target Images -&gt; Kernel partition size = 64		<span class="comment"># boot分区大小为64M</span></span><br><span class="line">Target Images -&gt; Root filesystem partition size = 512	<span class="comment"># root分区大小为512M</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 可选工具</span></span><br><span class="line">Base system -&gt; block-mount	<span class="comment"># 在LuCI界面添加&lt;挂载点&gt;菜单</span></span><br><span class="line">Base system -&gt; blockd		<span class="comment"># 自动挂载设备</span></span><br><span class="line">Base system -&gt; wireless-tools	<span class="comment"># 无线扩展工具</span></span><br><span class="line">Administration -&gt; htop		<span class="comment"># 添加htop命令</span></span><br><span class="line">Firmware -&gt; xxx			<span class="comment"># 选择你需要的网卡固件，默认即可</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>内核模块</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 文件系统</span></span><br><span class="line">Kernel modules -&gt; Filesystems -&gt; kmod-fs-ext4</span><br><span class="line">Kernel modules -&gt; Filesystems -&gt; kmod-fs-ntfs</span><br><span class="line">Kernel modules -&gt; Filesystems -&gt; kmod-fs-squashfs</span><br><span class="line">Kernel modules -&gt; Filesystems -&gt; kmod-fs-vfat</span><br><span class="line">Kernel modules -&gt; Filesystems -&gt; kmod-fuse</span><br><span class="line"></span><br><span class="line"><span class="comment"># 网卡支持</span></span><br><span class="line">Kernel modules -&gt; Network Devices -&gt; kmod-xxx	<span class="comment"># 有线网卡支持，跟以下几项可根据需求选择性添加</span></span><br><span class="line">Kernel modules -&gt; Wireless Drivers -&gt; kmod-rt2800-usb			<span class="comment"># 添加Ralink RT5370芯片的USB无线网卡驱动</span></span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-net -&gt; kmod-usb-net-sr9700	<span class="comment"># 添加USB2.0的有线网卡SR9700芯片支持</span></span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-net -&gt; kmod-usb-net-rtl8152	<span class="comment"># 添加USB2/3的有线网卡RTL8152/3芯片支持</span></span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-net -&gt; kmod-usb-net-asix	<span class="comment"># 添加支持亚信的有线网卡支持</span></span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-net -&gt; kmod-usb-net-asix-ax88179  <span class="comment"># 添加USB3.0的有线网卡芯片AX88179的驱动</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># USB支持</span></span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-core		<span class="comment"># 启用USB支持</span></span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-hid		<span class="comment"># USB键鼠支持</span></span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-ohci		<span class="comment"># 添加OHCI支持</span></span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-uhci		<span class="comment"># 添加UHCI支持</span></span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-storage	<span class="comment"># 启用USB存储</span></span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-storage-extras</span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-usb2		<span class="comment"># 开启USB2支持</span></span><br><span class="line">Kernel modules -&gt; USB Support -&gt; kmod-usb-usb3		<span class="comment"># 开启USB3支持</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>LuCI配置 </li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># LuCI设置</span></span><br><span class="line">LuCI -&gt; Collections -&gt; luci				<span class="comment"># 开启luci</span></span><br><span class="line">LuCI -&gt; Modules -&gt; Translations	-&gt; Chinese(zh-cn)	<span class="comment"># 中文支持</span></span><br><span class="line">LuCI -&gt; Themes -&gt; luci-theme-material			<span class="comment"># 添加主题</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># LuCI应用</span></span><br><span class="line">LuCI -&gt; Applications -&gt; luci-app-aria2			<span class="comment"># 下载工具</span></span><br><span class="line">LuCI -&gt; Applications -&gt; luci-app-firewall		<span class="comment"># 防 火 墙</span></span><br><span class="line">LuCI -&gt; Applications -&gt; luci-app-hd-idle		<span class="comment"># 硬盘休眠</span></span><br><span class="line">LuCI -&gt; Applications -&gt; luci-app-opkg			<span class="comment"># 软 件 包</span></span><br><span class="line">LuCI -&gt; Applications -&gt; luci-app-qos			<span class="comment"># 服务质量</span></span><br><span class="line">LuCI -&gt; Applications -&gt; luci-app-samba4			<span class="comment"># 网络共享</span></span><br><span class="line">LuCI -&gt; Applications -&gt; luci-app-frpc			<span class="comment"># 内网穿透</span></span><br><span class="line">LuCI -&gt; Applications -&gt; luci-app-shadowsocks-libev	<span class="comment"># 翻墙软件</span></span><br><span class="line">LuCI -&gt; Applications -&gt; luci-app-upnp			<span class="comment"># UPnP服务</span></span><br><span class="line">LuCI -&gt; Applications -&gt; luci-app-wol			<span class="comment"># 网络唤醒</span></span><br><span class="line">......</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol start="5">
+<li>其他工具</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">Network -&gt; Download Manager -&gt; ariang	<span class="comment"># Aria2管理页面</span></span><br><span class="line">Network -&gt; File Transfer -&gt; Aria2 Configuration -&gt; ***	<span class="comment"># 选择Aria2支持的功能</span></span><br><span class="line">Network -&gt; File Transfer -&gt; curl	<span class="comment"># 添加curl命令</span></span><br><span class="line">Network -&gt; File Transfer -&gt; wget	<span class="comment"># 添加wget命令</span></span><br><span class="line">Utilities -&gt; Compression -&gt; bsdtar	<span class="comment"># tar打包工具</span></span><br><span class="line">Utilities -&gt; Compression -&gt; gzip	<span class="comment"># GZ 压缩套件</span></span><br><span class="line">Utilities -&gt; Compression -&gt; xz-utils	<span class="comment"># XZ 压缩套件</span></span><br><span class="line">Utilities -&gt; Compression -&gt; unzip	<span class="comment"># zip解压工具</span></span><br><span class="line">Utilities -&gt; Compression -&gt; zip		<span class="comment"># zip压缩工具</span></span><br><span class="line">Utilities -&gt; Disc -&gt; fdisk		<span class="comment"># 磁盘分区工具</span></span><br><span class="line">Utilities -&gt; Disc -&gt; lsblk		<span class="comment"># 磁盘查看工具</span></span><br><span class="line">Utilities -&gt; Editors -&gt; vim		<span class="comment"># vim编辑器</span></span><br><span class="line">Utilities -&gt; Filesystem -&gt; ntfs-3g	<span class="comment"># NTFS读写支持</span></span><br><span class="line">Utilities -&gt; Filesystem -&gt; resize2fs	<span class="comment"># 分区大小调整</span></span><br><span class="line">Utilities -&gt; Terminal -&gt; screen		<span class="comment"># 添加screen</span></span><br><span class="line">Utilities -&gt; pciutils			<span class="comment"># 添加lspci命令</span></span><br><span class="line">Utilities -&gt; usbutils			<span class="comment"># 添加lsusb命令</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>IPv6支持</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Global build settings -&gt; Enable IPv6 support <span class="keyword">in</span> packages	<span class="comment"># 启用IPv6项</span></span><br><span class="line">Network -&gt; odhcp6c						<span class="comment"># IPv6客户端</span></span><br><span class="line">Network -&gt; odhcpd-ipv6only					<span class="comment"># IPv6服务端</span></span><br><span class="line">Network -&gt; Firewall -&gt; ip6tables				<span class="comment"># IPv6防火墙</span></span><br><span class="line">LuCI -&gt; Protocols -&gt; luci-proto-ipv6				<span class="comment"># WebUI支持</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="手动配置网卡"><a href="#手动配置网卡" class="headerlink" title="手动配置网卡"></a>手动配置网卡</h1><ol>
+<li><p>用网线连接自己的电脑和树莓派，LEDE默认的IP为静态 192.168.1.1，可以将电脑网卡设置为静态IP：192.168.1.2 来访问树莓派上的LEDE管理界面。</p>
+</li>
+<li><p>设置2.4G无线：网络 -&gt; 无线 选项卡中点修改，基本设置中设置为Legacy模式，频宽2.4GHz和信道自选（切勿使用自动信道和自动频宽），高级设置中国家代码AU。接口配置中模式：接入点AP，网络：lan，然后设置无线安全加密WPA2-PSK和密码等，其余默认即可。</p>
+</li>
+<li><p>设置5G无线：网络 -&gt; 无线 选项卡中点修改，基本设置中设置为AC模式，只能使用36信道和频宽为20Mhz或者40Mhz才能用作AP（切勿使用自动信道和自动频宽），高级设置中国家代码AU。接口配置中模式：接入点AP，网络：lan，然后设置无线安全加密WPA2-PSK和密码等，其余默认即可。</p>
+</li>
+<li><p>设置WAN口 网络 -&gt; 接口 选项卡中添加一个新接口命名为”wan”，协议根据自己的网络情况自行选择(我的是DHCP客户端)，在 物理设置 中单选接口为eth0，先保存但别应用。设置LAN口 网络 -&gt; 接口 选项卡中编辑lan网卡的物理设置，在无线网络和自定义接口上打上钩填上”eth0.1”， 并取消原本eth0前的钩后保存。</p>
+</li>
+</ol>
+<h1 id="自动配置网卡"><a href="#自动配置网卡" class="headerlink" title="自动配置网卡"></a>自动配置网卡</h1><blockquote>
+<p>在openwrt目录下新建一个名为files的文件夹，openwrt在编译的时候，会把files文件夹里的文件编译到固件的根目录。<br>在files/etc/config/中新建两个文件：network，wireless内容如下用来分别配置接口和无线</p>
+</blockquote>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># openwrt/files/etc/config/network</span></span><br><span class="line"></span><br><span class="line">config interface <span class="string">&#x27;loopback&#x27;</span></span><br><span class="line">	option ifname <span class="string">&#x27;lo&#x27;</span></span><br><span class="line">	option proto <span class="string">&#x27;static&#x27;</span></span><br><span class="line">	option ipaddr <span class="string">&#x27;127.0.0.1&#x27;</span></span><br><span class="line">	option netmask <span class="string">&#x27;255.0.0.0&#x27;</span></span><br><span class="line"></span><br><span class="line">config globals <span class="string">&#x27;globals&#x27;</span></span><br><span class="line">	option ula_prefix <span class="string">&#x27;fd38:13ae:ceeb::/48&#x27;</span></span><br><span class="line"></span><br><span class="line">config interface <span class="string">&#x27;lan&#x27;</span></span><br><span class="line">	option <span class="built_in">type</span> <span class="string">&#x27;bridge&#x27;</span></span><br><span class="line">	option proto <span class="string">&#x27;static&#x27;</span></span><br><span class="line">	option ipaddr <span class="string">&#x27;192.168.1.1&#x27;</span></span><br><span class="line">	option netmask <span class="string">&#x27;255.255.255.0&#x27;</span></span><br><span class="line">	option ip6assign <span class="string">&#x27;60&#x27;</span></span><br><span class="line">	option ifname <span class="string">&#x27;eth0.1&#x27;</span></span><br><span class="line">	option _orig_ifname <span class="string">&#x27;eth0 wlan0&#x27;</span></span><br><span class="line">	option _orig_bridge <span class="string">&#x27;true&#x27;</span></span><br><span class="line"></span><br><span class="line">config interface <span class="string">&#x27;wan&#x27;</span></span><br><span class="line">	option ifname <span class="string">&#x27;eth0&#x27;</span></span><br><span class="line">	option proto <span class="string">&#x27;dhcp&#x27;</span></span><br><span class="line">	option _orig_ifname <span class="string">&#x27;erspan0&#x27;</span></span><br><span class="line">	option _orig_bridge <span class="string">&#x27;false&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># openwrt/files/etc/config/wireless</span></span><br><span class="line"></span><br><span class="line">config wifi-device <span class="string">&#x27;radio0&#x27;</span></span><br><span class="line">	option <span class="built_in">type</span> <span class="string">&#x27;mac80211&#x27;</span></span><br><span class="line">	option channel <span class="string">&#x27;36&#x27;</span></span><br><span class="line">	option hwmode <span class="string">&#x27;11a&#x27;</span></span><br><span class="line">	option path <span class="string">&#x27;platform/soc/fe300000.mmcnr/mmc_host/mmc1/mmc1:0001/mmc1:0001:1&#x27;</span></span><br><span class="line">	option htmode <span class="string">&#x27;VHT40&#x27;</span></span><br><span class="line"></span><br><span class="line">config wifi-iface <span class="string">&#x27;default_radio0&#x27;</span></span><br><span class="line">	option device <span class="string">&#x27;radio0&#x27;</span></span><br><span class="line">	option mode <span class="string">&#x27;ap&#x27;</span></span><br><span class="line">	option encryption <span class="string">&#x27;none&#x27;</span></span><br><span class="line">	option ssid <span class="string">&#x27;RPI4&#x27;</span></span><br><span class="line">	option network <span class="string">&#x27;lan&#x27;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+<h1 id="其他实用技巧"><a href="#其他实用技巧" class="headerlink" title="其他实用技巧"></a>其他实用技巧</h1><ol>
+<li>系统 -&gt; LED配置中：LED0是绿色灯，LED1是红色灯，可以用来当无线收发的指示灯</li>
+<li>使用：<code>cat /sys/class/thermal/thermal_zone0/temp</code> 查看CPU温度</li>
+<li>在Samba中使用root用户除了执行smbpasswd -a root添加用户外，还需要注释模板中的：<code>#invalid users = root</code></li>
+<li>使用Win10 WSL环境编译的，编译前建议先将Win10系统变量剔除，否则可能报错：<code>export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin</code></li>
+<li>单核编译大概需要4个小时，中间可能会有几次错误，有的错误可跳过对后续编译没有影响</li>
+<li>在OpenWRT的 <code>.config</code> 文件中内核的选项都是形如 <code>CONFIG_KERNEL_XXX</code> 。自己手动添加内核选项时不要忘了在中间添加 <code>_KERNEL_</code> 前缀。</li>
+<li>Goproxy代理失败报错的解决方法：<code>export GO111MODULE=on</code> 和 <code>export GOPROXY=https://goproxy.cn</code></li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">go: github.com/armon/go-socks5@v0.0.0-20160902184237-e75332964ef5: Get <span class="string">&quot;https://proxy.golang.org/github.com/armon/go-socks5/@v/v0.0.0-20160902184237-e75332964ef5.mod&quot;</span>: dial tcp 172.217.27.145:443: connect: connection refused</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/Blogs/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/Blogs/2019/11/24/210/" title="S5PV210" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/Blogs/2019/11/24/PCB/" title="进程控制块" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2019/11/24/210/" title="S5PV210">
+								S5PV210			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 24日, 2019				
+							</p>
+							<p class="relate-post-content">
+								210开发板手上有两块210开发板，15年和16年分别购买的，一块是友善之臂Smart210，一块是九鼎X210V3s.很早以前玩的时候，还能从NoOS的裸机程序，到完整的BootUp，Linux和Android都能编译安装运行。现在...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2019/11/24/210/" title="S5PV210">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="S5PV210"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2019/11/24/PCB/" title="进程控制块">
+								进程控制块			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 24日, 2019				
+							</p>
+							<p class="relate-post-content">
+								进程控制块Process Control Block
+它放在RAM(运行内存)里并包含着进程的信息。每个进程都把自己的信息放在task_struct数据结构里
+task_struct 结构体定义在
+sched.h
+5.X的内核又改了，...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2019/11/24/PCB/" title="进程控制块">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="进程控制块"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2019/11/24/Supervisor/" title="Supervisor">
+								Supervisor			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 24日, 2019				
+							</p>
+							<p class="relate-post-content">
+								Supervisor是一个Python编写的进程管理工具，支持Linux/Unix系统（不支持Windows），可以很方便的启动、停止、重启多个进程，可以在程序意外退出后自动重启，记录并输出所有控制台日志，免去了自己编写shell脚本...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2019/11/24/Supervisor/" title="Supervisor">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Supervisor"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2019/11/24/docker/" title="Docker">
+								Docker			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 24日, 2019				
+							</p>
+							<p class="relate-post-content">
+								安装docker
+12345sudo apt-get install docker.iosudo gpasswd -a your_user_name docker               #加入用户组sudo service do...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2019/11/24/docker/" title="Docker">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Docker"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2019/11/24/everydataCMD/" title="每天1个命令">
+								每天1个命令			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								十一月 24日, 2019				
+							</p>
+							<p class="relate-post-content">
+								learn a cmd each day每天熟悉一个命令
+pstree
+1234567891011121314151617181920212223242526272829303132333435pstree: unrecognized...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2019/11/24/everydataCMD/" title="每天1个命令">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="每天1个命令"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/13/WSL_X11/" title="">
+											
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 13日, 2021				
+							</p>
+							<p class="relate-post-content">
+								WSL_X11_RemoteLogin远程登录 WSL可视化界面操作
+1234567891011121314151617181920212223sudo apt-get update &amp;&amp; sudo apt-get u...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/13/WSL_X11/" title="">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">
+								安装Amlogic平台交叉编译器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								编译Amlogic平台需要安装交叉编译器，按如下步骤安装。
+安装U-Boot BL交叉编译器123456$ sudo apt-get install gcc-arm-none-eabi$ wget https://releases.l...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="安装Amlogic平台交叉编译器"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" title="Khadas VIM2/VIM3/Edge KBI说明">
+								Khadas VIM2/VIM3/Edge KBI说明			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								KBI是”Khadas Bootloader Instructions”的缩写，主要用于以下几方面：
+
+控制可编程MCU
+管理底层硬件
+让开发者体验VIM2/VIM3/Edge全部的特性
+
+这篇文档介绍了如何配置使用KBI。 因为KB...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" title="Khadas VIM2/VIM3/Edge KBI说明">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Khadas VIM2/VIM3/Edge KBI说明"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">
+								Krescue - 助你玩转khadas			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								什么是krescueKrescue是一个非常小(21mb)的操作系统，您可以直接从micro SD卡或EMMC启动。它是一把“瑞士军刀”，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是，通过转储一个原始压缩的.img.g...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Krescue - 助你玩转khadas"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/Blogs/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/Blogs/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/Blogs/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/Blogs/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/Blogs/plugin/search/ziploader.js"></script>
+<script src="/Blogs/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/Blogs/search.zip',
+		version_Path = '/Blogs/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/Blogs/plugin/chinese/chinese.js"></script>
+<script src="/Blogs/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/Blogs/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/Blogs/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/Blogs/plugin/resizediv/resizediv.js"></script>
+<script src="/Blogs/js/main.js"></script>
+
+	</body>	
+</html>

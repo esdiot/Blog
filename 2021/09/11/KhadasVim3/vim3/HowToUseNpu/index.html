@@ -1,0 +1,1000 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      如何使用NPU | NeverSurrender
+    
+  </title>
+  <meta name="author" content="Biao Wang">
+  <meta name="keywords" content="" />
+  <meta name="description" content="VincentW will not give up" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/Blogs/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/Blogs/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/Blogs/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/Blogs/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			「如何使用NPU」
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/Blogs/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/Blogs/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			<!--
+	时间：2018-11-17
+	描述：
+		插件名称：katelog.min.js
+		插件作者：KELEN
+		插件来源: https://github.com/KELEN/katelog
+-->
+
+	
+		<div class="layout-toc">
+			<div id="layout-toc">
+				<div class="k-catelog-list" id="catelog-list" data-title="文章目录"></div>
+			</div>
+		</div>
+
+		
+<script src="/Blogs/plugin/toc/katelog.min.js"></script>
+
+
+		
+	 
+
+<div class="layout-post">
+	<div id="layout-post">
+		<div class="article-title">
+			
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUseNpu/" itemprop="url">
+		如何使用NPU
+	</a>
+
+		</div>
+
+		<div class="article-meta">
+			<span>
+				<i class="icon-calendar1"></i>
+				
+				
+
+
+
+
+	更新于
+
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUseNpu/" itemprop="url">
+		<time datetime="2021-09-11T11:01:21.016Z" itemprop="dateUpdated">
+	  		2021-09-11
+	  </time>
+	</a> 
+
+
+
+			</span>
+			<span>
+						
+			</span>
+			
+			
+
+
+
+		</div>
+
+		<div class="article-content" id="article-content">
+			<h3 id="下载NPU相关工具包SDK"><a href="#下载NPU相关工具包SDK" class="headerlink" title="下载NPU相关工具包SDK"></a>下载NPU相关工具包SDK</h3><p>请访问<a target="_blank" rel="noopener" href="https://www.khadas.com/npu-toolkit-vim3">这里</a>来获取SDK下载链接。</p>
+<p>下载NPU相关SDK到某个目录，如：<code>~/npu</code></p>
+<p>目录说明：</p>
+<ul>
+<li>docs：模型转换说明文档</li>
+<li>acuity-toolkit：模型转换相关工具</li>
+<li>linux_sdk：Linux SDK</li>
+<li>android_sdk：Android SDK</li>
+</ul>
+<h3 id="环境搭建"><a href="#环境搭建" class="headerlink" title="环境搭建"></a>环境搭建</h3><p>要使用模型转换工具必须要先安装<a target="_blank" rel="noopener" href="https://www.tensorflow.org/">TensorFlow</a>等工具。</p>
+<p>主机环境要求：</p>
+<ul>
+<li><code>Ubuntu 16.04 X64</code></li>
+<li><code>Ubuntu 18.04 X64</code></li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt update</span><br><span class="line">$ sudo apt install python3 python3-pip python3-virtualenv</span><br><span class="line">$ cd ~/npu/aml_npu_sdk/acuity-toolkit</span><br><span class="line">$ for req in $(cat requirements.txt); do pip3 install $req; done</span><br></pre></td></tr></table></figure>
+
+<p><em>注意：默认安装的TensorFlow为CPU版本，如果你的电脑有英伟达GPU，你也可以选择安装<a target="_blank" rel="noopener" href="https://www.tensorflow.org/install/gpu">GPU版本</a>来加速模型转换速度。</em></p>
+<p>验证TensorFlow安装：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">nick@Nick:~/npu/aml_npu_sdk/acuity-toolkit$ python3</span><br><span class="line">Python 3.5.2 (default, Jul 10 2019, 11:58:48) </span><br><span class="line">[GCC 5.4.0 20160609] on linux</span><br><span class="line">Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;license&quot; for more information.</span><br><span class="line">&gt;&gt;&gt; import tensorflow as tf</span><br><span class="line">&gt;&gt;&gt; sess = tf.Session()</span><br><span class="line">&gt;&gt;&gt; hello = tf.constant(&quot;Hello World&quot;)</span><br><span class="line">&gt;&gt;&gt; print(sess.run(hello))</span><br><span class="line">b&#x27;Hello World&#x27;</span><br></pre></td></tr></table></figure>
+
+<p>如果看到<code>Hello World</code>打印说明<code>TensorFlow</code>安装成功。</p>
+<h3 id="模型转换"><a href="#模型转换" class="headerlink" title="模型转换"></a>模型转换</h3><p>要想把训练好的模型部署在VIM3上运行，需要进行模型转换，当前只支持 <code>Caffe/Tensorflow/Tflite/Darknet/Onnx/Pytroch/keras</code> 模型。</p>
+<p>SDK里面自带了一个<code>TensorFlow</code>模型转换的示例脚本。执行如下脚本进行模型转换：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/npu/aml_npu_sdk/acuity-toolkit/conversion_scripts</span><br><span class="line">$ ./0_import_model.sh</span><br><span class="line">$ ./1_quantize_model.sh</span><br><span class="line">$ ./2_export_case_code.sh</span><br></pre></td></tr></table></figure>
+<p>转换成功后会生成case代码在目录<code>nbg_unify_model-name</code>如：<code>nbg_unify_inception_v3</code>下，这个就是我们最终需要的代码，可以编译后放在VIM3上运行。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">$ cd nbg_unify_inception_v3</span><br><span class="line">$ ll</span><br><span class="line">drwxrwxr-x 2 nick nick     4096 9月  20 15:16 ./</span><br><span class="line">drwxrwxr-x 5 nick nick     4096 9月  20 15:16 ../</span><br><span class="line">-rw-rw-r-- 1 nick nick      577 9月  20 15:16 BUILD</span><br><span class="line">-rw-rw-r-- 1 nick nick    37763 9月  20 15:16 .cproject</span><br><span class="line">-rw-rw-r-- 1 nick nick 28807168 9月  20 15:16 inception_v3.nb</span><br><span class="line">-rw-rw-r-- 1 nick nick    12691 9月  20 15:16 inceptionv3.vcxproj</span><br><span class="line">-rw-rw-r-- 1 nick nick     5869 9月  20 15:16 main.c</span><br><span class="line">-rw-rw-r-- 1 nick nick     2000 9月  20 15:16 makefile.linux</span><br><span class="line">-rw-rw-r-- 1 nick nick     2194 9月  20 15:16 .project</span><br><span class="line">-rw-rw-r-- 1 nick nick      358 9月  20 15:16 vnn_global.h</span><br><span class="line">-rw-rw-r-- 1 nick nick     7191 9月  20 15:16 vnn_inceptionv3.c</span><br><span class="line">-rw-rw-r-- 1 nick nick      985 9月  20 15:16 vnn_inceptionv3.h</span><br><span class="line">-rw-rw-r-- 1 nick nick     3566 9月  20 15:16 vnn_post_process.c</span><br><span class="line">-rw-rw-r-- 1 nick nick      464 9月  20 15:16 vnn_post_process.h</span><br><span class="line">-rw-rw-r-- 1 nick nick    20385 9月  20 15:16 vnn_pre_process.c</span><br><span class="line">-rw-rw-r-- 1 nick nick     1294 9月  20 15:16 vnn_pre_process.h</span><br></pre></td></tr></table></figure>
+
+<p><em>注意：如果你要转换自己的模型，那么需要修改脚本里面相应文件的路径和参数。</em></p>
+<p>以上是一个模型转换的示例脚本，更多详细信息请参考模型转换文档<code>docs/模型转换运行用户指南(0.5).pdf</code>。</p>
+<h3 id="编译转换好的case代码"><a href="#编译转换好的case代码" class="headerlink" title="编译转换好的case代码"></a>编译转换好的case代码</h3><h4 id="基于Linux运行"><a href="#基于Linux运行" class="headerlink" title="基于Linux运行"></a>基于Linux运行</h4><p>要想在VIM3上运行这个模型，需要编译上述转换好的case代码。</p>
+<ul>
+<li>从示例demo中拷贝编译脚本到转换的case代码目录</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ cd ~/npu/aml_npu_sdk/acuity-toolkit/conversion_scripts/nbg_unify_inception_v3</span><br><span class="line">$ cp ~/npu/aml_npu_sdk/linux_sdk/demo/inceptionv3/build_vx.sh .</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>编译case代码</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ ./build_vx.sh ~/npu/aml_npu_sdk/linux_sdk/linux_sdk</span><br></pre></td></tr></table></figure>
+
+<p>*说明： 编译脚本用法： <strong>./build_vx.sh linux-SDK-directory</strong>。*</p>
+<p>编译成功后生成的可执行文件在目录<code>bin_r</code>下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">$ ll bin_r/</span><br><span class="line">total 172</span><br><span class="line">drwxrwxr-x 2 nick nick   4096 9月  20 15:24 ./</span><br><span class="line">drwxrwxr-x 3 nick nick   4096 9月  20 15:24 ../</span><br><span class="line">-rwxrwxr-x 1 nick nick 129568 9月  20 15:24 inceptionv3*</span><br><span class="line">-rw-rw-r-- 1 nick nick   6272 9月  20 15:24 main.o</span><br><span class="line">-rw-rw-r-- 1 nick nick   3888 9月  20 15:24 vnn_inceptionv3.o</span><br><span class="line">-rw-rw-r-- 1 nick nick   3496 9月  20 15:24 vnn_post_process.o</span><br><span class="line">-rw-rw-r-- 1 nick nick  16624 9月  20 15:24 vnn_pre_process.o</span><br></pre></td></tr></table></figure>
+
+<p><code>inceptionv3</code>即为编译好的可执行文件。</p>
+<ul>
+<li>在VIM3上运行</li>
+</ul>
+<p>固件版本需要<a target="_blank" rel="noopener" href="https://dl.khadas.com/Firmware/VIM3/Ubuntu/EMMC/">V190830</a>及以上版本，并更新至最新系统。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">khadas@Khadas:~$ sudo apt update</span><br><span class="line">khadas@Khadas:~$ sudo apt full-upgrade</span><br><span class="line">khadas@Khadas:~$ sudo do-fenix-full-upgrade</span><br><span class="line">khadas@Khadas:~$ sync</span><br><span class="line">khadas@Khadas:~$ sudo reboot</span><br></pre></td></tr></table></figure>
+
+<p>拷贝上面编译生成的可执行文件<code>inceptionv3</code>以及模型文件<code>inception_v3.nb</code>到VIM3上，同时拷贝要识别的图片（尺寸为299x299的jpeg图片）到VIM3上并运行。</p>
+<p><em>说明：示例图片可以在目录<code>linux_sdk/demo/inceptionv3/bin_demo</code>下面找到。</em></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">root@Khadas:~/inceptionv3# ./inceptionv3 inception_v3.nb goldfish_299x299.jpg </span><br><span class="line">D [setup_node:367]Setup node id[0] uid[0] op[NBG]</span><br><span class="line">D [print_tensor:129]in : id[   1] shape[ 3, 299, 299, 1   ] fmt[u8 ] qnt[ASM zp=137, scale=0.007292]</span><br><span class="line">D [print_tensor:129]out: id[   0] shape[ 1001, 1          ] fmt[f16] qnt[NONE]</span><br><span class="line">D [optimize_node:311]Backward optimize neural network</span><br><span class="line">D [optimize_node:318]Forward optimize neural network</span><br><span class="line">I [compute_node:260]Create vx node</span><br><span class="line">Create Neural Network: 40ms or 40037us</span><br><span class="line">I [vsi_nn_PrintGraph:1308]Graph:</span><br><span class="line">I [vsi_nn_PrintGraph:1309]***************** Tensors ******************</span><br><span class="line">D [print_tensor:137]id[   0] shape[ 1001, 1          ] fmt[f16] qnt[NONE]</span><br><span class="line">D [print_tensor:137]id[   1] shape[ 3, 299, 299, 1   ] fmt[u8 ] qnt[ASM zp=137, scale=0.007292]</span><br><span class="line">I [vsi_nn_PrintGraph:1318]***************** Nodes ******************</span><br><span class="line">I [vsi_nn_PrintNode:156](             NBG)node[0] [in: 1 ], [out: 0 ] [33f7cec0]</span><br><span class="line">I [vsi_nn_PrintGraph:1327]******************************************</span><br><span class="line">I [vsi_nn_ConvertTensorToData:732]Create 268203 data.</span><br><span class="line">Verify...</span><br><span class="line">Verify Graph: 1ms or 1562us</span><br><span class="line">Start run graph [1] times...</span><br><span class="line">Run the 1 time: 27ms or 27960us</span><br><span class="line">vxProcessGraph execution time:</span><br><span class="line">Total   27ms or 27973us</span><br><span class="line">Average 27.97ms or 27973.00us</span><br><span class="line">I [vsi_nn_ConvertTensorToData:732]Create 2002 data.</span><br><span class="line"> --- Top5 ---</span><br><span class="line">  2: 0.826660</span><br><span class="line">795: 0.008255</span><br><span class="line">974: 0.004066</span><br><span class="line">393: 0.002390</span><br><span class="line">408: 0.002285</span><br><span class="line">I [vsi_nn_ConvertTensorToData:732]Create 2002 data.</span><br></pre></td></tr></table></figure>
+
+<p>这个demo只是做了top5处理，可以看到识别的概率最大为索引<code>2</code>的<code>0.826660</code>，对比labels <code>linux_sdk/inceptionv3_demo/bin_demo/imagenet_slim_labels.txt</code>可以发现识别出来是<code>金鱼</code>，结果正确。</p>
+<h4 id="基于Android运行"><a href="#基于Android运行" class="headerlink" title="基于Android运行"></a>基于Android运行</h4><p>参考Android&amp;Linux编译集成指导<code>docs/Android&amp;Linux编译集成指导(0.2).pdf</code> Android相关部分。</p>
+<h3 id="写在最后"><a href="#写在最后" class="headerlink" title="写在最后"></a>写在最后</h3><p>以上只是简单说明了模型转换以及case代码编译运行，更多详细信息请参考模型转换文档<code>docs/模型转换运行用户指南(0.5).pdf</code>。</p>
+	
+		</div>
+		
+		<div id="current-post-cover" data-scr="/Blogs/img/cart_cover.jpg"></div>
+
+		<!-- relate post, comment...-->
+		<div class="investment-container">
+			<div class="investment-header">
+				<div class="investment-title-1">
+					<div class="on">相关文章</div>
+					<div>评论</div>
+					<div>分享</div>
+				</div>
+				<div class="investment-title-2">	            
+					
+	<span>
+		<a id="totop-post-page">返回顶部</a>
+		
+			<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUseNPUSDK/" title="SDK使用说明" rel="prev">
+				&laquo;上一篇
+			</a>
+		
+		
+			<a href="/Blogs/2021/09/11/KhadasVim3/vim3/HowToUseRPiGPIO/" title="如何使用RPi.GPIO" rel="next">
+				下一篇&raquo;
+			</a>
+			
+	</span>
+
+
+      		
+				</div>	
+			</div>
+			
+			<div class="investment-content">
+				<div class="investment-content-list">
+					
+
+<div class="relate-post">
+	
+		<ul>
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/13/WSL_X11/" title="">
+											
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 13日, 2021				
+							</p>
+							<p class="relate-post-content">
+								WSL_X11_RemoteLogin远程登录 WSL可视化界面操作
+1234567891011121314151617181920212223sudo apt-get update &amp;&amp; sudo apt-get u...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/13/WSL_X11/" title="">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt=""/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/hello-world/" title="Hello World">
+								Hello World			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using ...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/hello-world/" title="Hello World">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Hello World"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">
+								安装Amlogic平台交叉编译器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								编译Amlogic平台需要安装交叉编译器，按如下步骤安装。
+安装U-Boot BL交叉编译器123456$ sudo apt-get install gcc-arm-none-eabi$ wget https://releases.l...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/InstallToolchains/" title="安装Amlogic平台交叉编译器">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="安装Amlogic平台交叉编译器"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" title="Khadas VIM2/VIM3/Edge KBI说明">
+								Khadas VIM2/VIM3/Edge KBI说明			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								KBI是”Khadas Bootloader Instructions”的缩写，主要用于以下几方面：
+
+控制可编程MCU
+管理底层硬件
+让开发者体验VIM2/VIM3/Edge全部的特性
+
+这篇文档介绍了如何配置使用KBI。 因为KB...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/KbiGuidance/" title="Khadas VIM2/VIM3/Edge KBI说明">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Khadas VIM2/VIM3/Edge KBI说明"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">
+								Krescue - 助你玩转khadas			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								什么是krescueKrescue是一个非常小(21mb)的操作系统，您可以直接从micro SD卡或EMMC启动。它是一把“瑞士军刀”，你可以用它来执行各种低级的SBC维修任务。其中最值得注意的是，通过转储一个原始压缩的.img.g...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/Krescue/" title="Krescue - 助你玩转khadas">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="Krescue - 助你玩转khadas"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/ListOfCompatibleNVMeSSDs/" title="List of compatible NVMe SSDs">
+								List of compatible NVMe SSDs			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								TODO
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/ListOfCompatibleNVMeSSDs/" title="List of compatible NVMe SSDs">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="List of compatible NVMe SSDs"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/LoadImagesWithUBootViaTFTP/" title="通过TFTP下载镜像">
+								通过TFTP下载镜像			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								在有线网络连接正常的情况下，U-boot能通过TFTP非常方便的下载更新镜像文件。
+准备
+ 搭建TFTP服务器
+
+更新U-boot12kvim# tftp 1080000 u-boot.binkvim# store rom_write...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/LoadImagesWithUBootViaTFTP/" title="通过TFTP下载镜像">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="通过TFTP下载镜像"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupSerialTool/" title="设置串口调试工具">
+								设置串口调试工具			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								准备工作
+ 准备一个串口调试工具，我们使用的是一个USB转TTL的串口调试工具
+
+如何连接请按下面方式连接：
+1) 连接所需的GPIO, 确保TX/RX连接正确
+* Tool Pin `GND`: &lt;---&gt; `Pin17...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupSerialTool/" title="设置串口调试工具">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="设置串口调试工具"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupTFTPServer/" title="搭建TFTP服务器">
+								搭建TFTP服务器			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								很常用的搭建方法，你也可以通过Google搜索相关信息。
+这里我们提供一个参考。
+Ubuntu16.04设置TFTP安装TFTP相关软件包：
+1$ sudo apt-get install openbsd-inetd tftpd tf...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/SetupTFTPServer/" title="搭建TFTP服务器">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="搭建TFTP服务器"/>
+							</a>
+						</div>
+					</li>												
+			
+					<li>
+						<div class="relate-post-text">
+							<a class="relate-post-title" href="/Blogs/2021/09/11/KhadasVim3/vim3/UBootUsage/" title="U-boot使用说明">
+								U-boot使用说明			
+							</a>
+							<p class="relate-post-date">
+								<i class="fa fa-calendar"></i>
+								九月 11日, 2021				
+							</p>
+							<p class="relate-post-content">
+								通过U盘烧录boot.img拷贝 boot.img 到U盘, 然后插入到VIM USB，执行如下命令
+1kvim# usb_update boot boot.img
+
+通过SD卡烧录boot.img拷贝 boot.img SD卡, 然...
+							</p>
+						</div>
+
+						<div class="relate-post-cover">
+							<a href="/Blogs/2021/09/11/KhadasVim3/vim3/UBootUsage/" title="U-boot使用说明">				
+								
+								<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg" alt="U-boot使用说明"/>
+							</a>
+						</div>
+					</li>												
+			
+		</ul>
+	
+</div>	
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-comment">
+
+	
+		<div class="config-info">
+			Please check the parameter of <b>comment</b> in config.yml of hexo-theme-Annie!
+		</div>	
+	
+
+</div>
+				</div>
+				<div class="investment-content-list">
+					<div class="layout-share">
+	
+	
+
+		
+			
+			<!-- socialShare share -->
+			<div class="social-share"></div>
+
+<!--  css & js -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+			
+		
+		
+	
+</div>
+
+
+				</div>
+			</div>	
+		</div>
+	</div>
+</div>
+
+<!-- show math formula -->
+
+
+
+	 
+	
+<script src="/Blogs/plugin/clipboard/clipboard.js"></script>
+
+	<script>
+		// Copy code !
+	    function preprocessing() {
+	        $("#article-content .highlight").each(function() {
+	            $(this).wrap('<div id="post-code"></div>');
+	        })
+
+	        $("#article-content #post-code").each(function() {
+	            $(this).prepend('<nav class="copy-nav"><span><i class="code-language"></i></span></nav>');
+	        })
+
+	        $("#article-content .copy-nav").each(function() {
+	            let languageClass = $(this).next().attr('class'),
+	                language = ((languageClass.length > 9) && (languageClass != null)) ? languageClass.substr(10) : "none"; //why 9? Need to check language?
+
+	            $(this).find('.code-language').text(language);
+	            $(this).append('<span class="copy-btn icon-paste"></span>');
+	        });
+	    }
+
+		function copy() {
+		    $('#article-content #post-code').each(function(i) {
+		        let codeCopyId = 'codeCopy-' + i;
+
+		        let codeNode = $(this).find('.code'),
+		            copyButton = $(this).find('.copy-btn');
+
+		        codeNode.attr('id', codeCopyId);
+		        copyButton.attr('data-clipboard-target-id', codeCopyId);
+		    })
+   
+			let clipboard = new ClipboardJS('.copy-btn', {
+					target: function(trigger) {
+						return document.getElementById(trigger.getAttribute('data-clipboard-target-id'));
+					}
+		      	});
+
+			//pure js
+			function showTooltip(elem, msg) {		   
+				elem.setAttribute('aria-label', msg);
+				elem.setAttribute('class', 'copy-btn icon-clipboard1');
+				setTimeout(function() {
+					elem.setAttribute('class', 'copy-btn icon-paste');
+				}, 2000);
+			}
+
+			clipboard.on('success', function(e) {
+			    e.clearSelection();
+			    console.info('Action:', e.action);		   
+			    console.info('Trigger:', e.trigger);
+			    showTooltip(e.trigger, 'Copied!');   
+			});
+			
+			clipboard.on('error', function(e) {
+			    console.error('Action:', e.action);
+			    console.error('Trigger:', e.trigger);
+			});
+		}
+		
+		(function copyCode(){
+			if ($('.layout-post').length) {
+			    preprocessing();
+			    copy();
+			} 
+		})();
+	</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/Blogs/plugin/fancybox/jquery.fancybox.css">
+
+
+<script src="/Blogs/plugin/fancybox/jquery.fancybox.js"></script>
+
+
+<script type="text/javascript">
+	(function gallerySet(){
+		let titleID = $('.article-title a'),
+			imageID = $('.article-content img'),
+			videoID = $('.article-content video');
+		
+		let postTitle = titleID.text() ? titleID.text() : "No post title!";
+		
+		imageID.each(function() {
+			let imgPath = $(this).attr('src'),
+				imgTitle = $(this).attr('alt') ? $(this).attr('alt') : "No image description!";
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox="gallery" data-caption="《 ' + postTitle + ' 》' + imgTitle + '"href="' + imgPath + '"> </a>');
+		});
+		
+		videoID.each(function() {
+			let videoPath = $(this).attr('src');
+		
+			//给每个匹配的<img>元素打包, 即添加父元素<a>
+			$(this).wrap('<a data-fancybox href=" ' + videoPath + ' "> </a>');
+		});
+		
+		//TODO：支持html5 video
+
+		if($('#layout-post').length) {
+			$('[data-fancybox="gallery"]').fancybox({
+				loop: true,
+				buttons: [
+					"zoom",
+					"share",
+					"slideShow",
+					"fullScreen",
+					//"download",
+					"thumbs",
+					"close"
+				],
+				protect: true
+			});
+		}
+	})();
+</script>
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/Blogs/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/Blogs/plugin/search/ziploader.js"></script>
+<script src="/Blogs/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/Blogs/search.zip',
+		version_Path = '/Blogs/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/Blogs/plugin/chinese/chinese.js"></script>
+<script src="/Blogs/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/Blogs/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/Blogs/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/Blogs/plugin/resizediv/resizediv.js"></script>
+<script src="/Blogs/js/main.js"></script>
+
+	</body>	
+</html>

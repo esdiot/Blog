@@ -1,0 +1,804 @@
+<!--
+	作者：Sariay
+	时间：2018-08-26
+	描述：There may be a bug, but don't worry, Qiling(器灵) says that it can work normally! aha!
+-->
+<!DOCTYPE html>
+<html class="html-loading">
+		
+
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+  <title>
+    
+      NeverSurrender
+    
+  </title>
+  <meta name="author" content="Biao Wang">
+  <meta name="keywords" content="" />
+  <meta name="description" content="VincentW will not give up" />
+	<!-- favicon -->
+  <link rel="shortcut icon" href="/Blogs/img/favicon.ico">
+
+  <!-- css -->
+  
+<link rel="stylesheet" href="/Blogs/css/Annie.css">
+
+  
+  <!-- jquery -->
+	
+<script src="/Blogs/plugin/jquery/jquery.min.js"></script>
+
+
+<script>
+    const CONFIG_BGIMAGE = {
+      mode: 'normal',
+      normalSrc: '/Blogs/img/header-bg.jpg',
+      randomYouMax: 110,
+      randomYouSrc: 'https://sariay.github.io/Random-img/',
+	  randomOtherSrc: 'https://api.berryapi.net/?service=App.Bing.Images&day=-0',
+	  preloaderEnable: true
+    }
+	
+    const CONFIG_LEACLOUD_COUNT = {
+      enable: false,
+	  appId: 'AU8...',
+	  appKey: '4cU...',
+	  serverURLs: 'http' || ' '
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.0"></head>
+	<body>
+		<!-- Preloader -->
+
+	<div id="preloader">
+		<div class="pre-container">
+			
+				<div class="spinner">
+					<div class="double-bounce1"></div>
+					<div class="double-bounce2"></div>
+				</div>
+						
+		</div>
+	</div>
+
+
+<!-- header -->
+<header class="fixbackground bg-pan-br">
+	<div class="mask">
+		<!-- motto -->
+		<div class="h-body">	
+			
+				<div class="motto text-shadow-pop-left">
+					<p class="content" id="motto-content">获取中...</p>
+					<p>-<p>
+					<p class="author" id="motto-author">Just a minute...</p>
+				</div>
+			
+		</div>
+		
+		<!-- others: such as time... -->			
+		<div class="h-footer">
+			<a href="javascript:;" id="read-more" class="scroll-down">
+				<span class="icon-anchor1 animation-scroll-down"></span>
+			</a>
+		</div>
+	</div>
+</header>
+
+<div id="navigation-hide">
+	<!-- Progress bar -->
+	<div id="progress-bar"></div>
+
+	<!-- Progress percent -->
+	<div id="progress-percentage"><span>0.0%</span></div>
+
+	<div class="toc-switch"><span class="switch-button">目录</span></div>
+
+	<!-- Page title -->
+	<p>
+		
+			主页
+		
+	</p>
+
+	
+	
+
+	<!-- Nav trigger for navigation-H-->
+	<a class="nav-trigger"><span></span></a>
+</div>
+
+<!-- Navigation in div(id="navigation-H") -->
+<nav class="nav-container" id="cd-nav">
+	<div class="nav-header">
+		<span class="logo"> 
+			<img src="/Blogs/img/logo.png">
+		</span>
+		<a href="javascript:;" class="nav-close"></a>
+	</div>
+	
+	<div class="nav-body">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+	
+	<div class="nav-footer">
+		<ul id="global-social">
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-one"><span class="path1"></span><span class="path2"></span></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-zhihu"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-github"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-sina-weibo "></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-pinterest2"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-instagram"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="http://github.com/" target="_blank">
+				<span class="icon-twitter"></span>
+			</a>
+		</li>
+	
+		<li>
+			<a href="/Blogs/atom.xml" target="_blank">
+				<span class="icon-rss"></span>
+			</a>
+		</li>
+			
+</ul>
+
+	</div>
+</nav>
+			
+		<!--main-->
+		<main>
+			
+
+
+
+	<!--cart style-->
+	<div class="layout-cart">
+	<div id="layout-cart">
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/BootFromExtMedia/" title=" 从外部媒体介质启动系统 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/BootFromExtMedia/" title="从外部媒体介质启动系统">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/BootFromExtMedia/" itemprop="url">
+		从外部媒体介质启动系统
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							有很多系统运行在SD卡或U盘上,例如：
+
+Armbian with Debian / Ubuntu
+AltLinux
+ArchLinux
+CoreELEC...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/BootFromSpiFlash/" title=" 从SPI启动系统 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/BootFromSpiFlash/" title="从SPI启动系统">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/BootFromSpiFlash/" itemprop="url">
+		从SPI启动系统
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							Khadas VIM3以及VIM3L板载了 一块存储空间为16MB的SPI-falsh芯片,可用于从SPI启动系统,这篇文档将说明如何从SPI启动.
+编译...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/BuildAndroid/" title=" 编译Amlogic平台安卓源码 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/BuildAndroid/" title="编译Amlogic平台安卓源码">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/BuildAndroid/" itemprop="url">
+		编译Amlogic平台安卓源码
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							准备
+ 搭建开发环境
+ 下载安卓源码
+ 安装Amlogic平台工具链
+
+编译注意：在开始编译前，确保已经搭建好如上准备所述的环境。
+编译U-boot：
+1...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/BuildBootLogoForUboot/" title=" Build Boot-Up Logo for U-Boot " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/BuildBootLogoForUboot/" title="Build Boot-Up Logo for U-Boot">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/BuildBootLogoForUboot/" itemprop="url">
+		Build Boot-Up Logo for U-Boot
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							TBD
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/ConnectLcd/" title=" 如何连接TS050触摸屏 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/ConnectLcd/" title="如何连接TS050触摸屏">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/ConnectLcd/" itemprop="url">
+		如何连接TS050触摸屏
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							
+
+
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/CreateBootableSDCard/" title=" 创建启动SD卡 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/CreateBootableSDCard/" title="创建启动SD卡">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/CreateBootableSDCard/" itemprop="url">
+		创建启动SD卡
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							什么是启动SD卡？
+
+启动SD卡包含U-boot
+启动SD卡包含文件系统
+
+为什么需要SD启动卡？
+
+在开发中使用SD启动卡提升调试效率
+发布SD卡固件会...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/CreateBurnCardViaCLI/" title=" 通过命令行方式创建系统烧录卡 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/CreateBurnCardViaCLI/" title="通过命令行方式创建系统烧录卡">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/CreateBurnCardViaCLI/" itemprop="url">
+		通过命令行方式创建系统烧录卡
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							本教程是指导linux用户一步一步地创建TF烧录卡，你也可以使用Windows方式创建烧录卡(VIM1/VIM2/VIM3)
+注意：由于VIM1、VIM2...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/CreateLibreELECBootCardViaCLI/" title=" 通过命令行创建LibreELEC启动卡 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/CreateLibreELECBootCardViaCLI/" title="通过命令行创建LibreELEC启动卡">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/CreateLibreELECBootCardViaCLI/" itemprop="url">
+		通过命令行创建LibreELEC启动卡
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							注意：由于VIM1、VIM2和VIM3操作方式基本上是一样的，所以本文档以VIM1为例进行说明。
+概述
+本教程面向LibreELEC，同样也适用于Open...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/DownloadAndroidSourceCode/" title=" 如何下载安卓源码 " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/DownloadAndroidSourceCode/" title="如何下载安卓源码">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/DownloadAndroidSourceCode/" itemprop="url">
+		如何下载安卓源码
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							由于Android SDK的部分仓库需要从Google服务器下载，中国大陆地区用户，可以通过如下4种方式下载完整Android源码：
+
+使用VPN直接下载...
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+			<div class="post" id="post">
+				<a class="post-cover" href="/Blogs/2021/09/11/KhadasVim3/vim3/ExtraPowerInput/" title=" Extra Power Input for Khadas VIMs " target="_blank">
+					
+					<img class="lazy" src="/img/lazy.gif" data-src="/img/cart_cover.jpg"/>
+				</a>
+
+				<div class="post-text">
+					<p class="post-time">
+						九月 11日, 2021
+					</p>	
+					<h3 class="post-title" id="post-title-index">
+						<a href="/Blogs/2021/09/11/KhadasVim3/vim3/ExtraPowerInput/" title="Extra Power Input for Khadas VIMs">							
+							
+	<a href="/Blogs/2021/09/11/KhadasVim3/vim3/ExtraPowerInput/" itemprop="url">
+		Extra Power Input for Khadas VIMs
+	</a>
+
+						</a>
+					</h3>
+					<p class="post-content">
+						
+							TBD
+						
+					</p>
+					<p class="post-meta">
+						
+
+
+
+					</p>
+				</div>
+			</div>
+		
+	</div>
+	
+	
+	<div id="pagination">
+		
+			<a href="/Blogs/page/18/" data-title="加载更多" data-status="没有了">加载更多</a>
+		
+	</div>
+
+	
+
+</div>
+	
+
+		</main>
+
+		<!--footer-->
+		<footer>
+	<div id="navigation-show">
+		<ul id="global-nav">
+	
+		<li class="menu-home">
+			<a href="/Blogs/" class="menu-item-home" target="_blank">主页</a>
+		</li>
+		
+	
+		<li class="menu-archive">
+			<a href="/Blogs/archives" class="menu-item-archive" target="_blank">归档</a>
+		</li>
+		
+	
+		<li class="menu-categories">
+			<a href="/Blogs/categories" class="menu-item-categories" target="_blank">分类</a>
+		</li>
+		
+	
+		<li class="menu-tags">
+			<a href="/Blogs/tags" class="menu-item-tags" target="_blank">标签</a>
+		</li>
+		
+	
+		<li class="menu-about">
+			<a href="/Blogs/about" class="menu-item-about" target="_blank">关于</a>
+		</li>
+		
+	
+		<li class="menu-gallery">
+			<a href="/Blogs/gallery" class="menu-item-gallery" target="_blank">相册</a>
+		</li>
+		
+	
+
+	
+		<li class="menu-search">
+			<a href="javascript:;" class="popup-trigger">搜索</a>
+		</li>
+	
+</ul>
+	</div>
+
+	<div class="copyright">
+		<p>
+			 
+				&copy;2017 - 2021, content by Sariay. All Rights Reserved.
+			
+			
+				<a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a> Theme <a href="https://github.com/Sariay/hexo-theme-Annie" title="Annie" target="_blank" rel="noopener">Annie</a> by Sariay.
+			
+		</p>
+		<p>
+			
+
+	<!-- busuanzi -->
+	<!-- busuanzi -->
+
+
+
+			<a href="javascript:zh_tran('s');" class="zh_click" id="zh_click_s">简体</a> 
+			<a href="javascript:zh_tran('t');" class="zh_click" id="zh_click_t">繁體</a>				
+		</p>
+	</div>		
+</footer>
+		
+	<!-- Local or hitokoto! -->
+
+	
+<script src="/Blogs/plugin/motto/motto.js"></script>
+
+	
+	<script type="text/javascript">
+		(function motto(){
+			let mottoText = getMingYanContent().split('</br> - </br>'),
+			
+			mottoTextContent = mottoText[0]?mottoText[0]:'请刷新...',
+			
+			mottoTextFrom = mottoText[1]?mottoText[1]:'one/一个';
+			
+			mottoTextContent = mottoTextContent.trim().substring(0, 100);
+		
+			$("#motto-content").html( mottoTextContent);
+			$("#motto-author").html( mottoTextFrom  );
+		})();	
+	</script>	
+
+
+
+<!-- love effect -->
+
+
+<!-- back to top -->
+
+	<div id="totop">
+	<span class="icon-circle-up"></span>
+</div>
+
+
+
+<!-- site analysis -->
+
+
+	<!-- site-analysis -->
+	
+	
+	
+	
+	
+ 
+
+<!-- leancloud -->
+
+
+	<!-- leancloud -->
+	<!--
+	时间：2018-11-27
+	描述：
+		文章访问量：visitors
+		文章喜欢量：likes	
+		文章排行榜：topNPost
+		其他得说明：
+			01-Cookie相关的函数 
+				https://blog.csdn.net/somehow1002/article/details/78511541（Author：somehow1002）
+			02-visitors相关的函数 
+				https://blog.csdn.net/u013553529/article/details/63357382（Author：爱博客大伯）
+				https://notes.doublemine.me/2015-10-21-为NexT主题添加文章阅读量统计功能.html（Author：夏末）
+			03-topNPost相关的函数
+				https://hoxis.github.io/hexo-next-read-rank.html（Author：hoxis）
+			04-likes相关的函数，
+				参考了01 & 02进行简单的设计与实现
+-->
+
+
+	
+
+  
+
+	<!--
+	时间：2018-10-3
+	描述：
+		插件名称：hexo-generator-search-zip
+		插件来源: https://github.com/SuperKieran/hexo-generator-search-zip
+		代码参考：https://github.com/SuperKieran/TKL/blob/master/layout/_partial/search.ejs(Include: js & css)	
+-->
+<div class="popup search-popup local-search-popup scrollbar" >
+	<div class="local-search-container">
+		<span class="popup-btn-close">
+      		ESC
+   		</span>
+		<div class="local-search-header">
+			<div class="input-prompt">				
+			</div>
+			<input autocomplete="off" placeholder="Search..." type="text" id="local-search-input">
+		</div>
+		<div class="local-search-body">
+			<div id="local-search-output"></div>
+		</div>
+		<div class="local-search-footer">
+			<div class="topN-post">				
+				
+								
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script src="/Blogs/plugin/search/ziploader.js"></script>
+<script src="/Blogs/js/search.js"></script>
+
+
+<script type="text/javascript">
+	var search_path = 'search.json',
+		zip_Path = '/Blogs/search.zip',
+		version_Path = '/Blogs/searchVersion.txt',
+		input_Trigger = 'auto',
+		top_N = '2';
+
+	themeLocalSearch({
+		search_path, 
+		zip_Path, 
+		version_Path, 
+		input_Trigger, 
+		top_N
+	});
+</script>
+
+
+
+<script src="/Blogs/plugin/chinese/chinese.js"></script>
+<script src="/Blogs/plugin/imagelazyloader/yall.min.js"></script>
+<script src="/Blogs/plugin/imageloaded/imagesloaded.pkgd.min.js"></script>
+<script src="/Blogs/plugin/nicescroll/jquery.nicescroll.js"></script>
+<script src="/Blogs/plugin/resizediv/resizediv.js"></script>
+<script src="/Blogs/js/main.js"></script>
+
+	</body>	
+</html>
